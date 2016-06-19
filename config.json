@@ -3,5 +3,5 @@
     "log_file": "~\\Documents\\Scratch\\Logs\\hike-seeker.log",
     
     "__comment": "Folder where caches of HTML sentence documents should be stored",
-    "sentence_cache_folder": "~\\Documents\\Scratch\\DownloadCache",
+    "sentence_cache_folder": "~\\Documents\\Scratch\\DownloadCache"
 }

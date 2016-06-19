@@ -1,3 +1,5 @@
+import requests
+
 class CachedDownloader:
 
     def __init__(self, cache_folder):
@@ -30,3 +32,8 @@ class CachedDownloader:
         else:
             with codecs.open(cache_file, 'r', 'utf-8') as file:
                 return file.read()
+
+    def download_without_cache(self, url):
+        response = requests.get(url)
+        response_as_text = response.content.decode(encoding=response.encoding)
+        return response_as_text

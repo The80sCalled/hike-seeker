@@ -1,6 +1,5 @@
 import os
 import shutil
-__author__ = 'Michael'
 
 def ensure_dir(path):
     if not os.path.exists(path):
