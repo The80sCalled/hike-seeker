@@ -1,7 +1,10 @@
 {
     "__comment": "Path to log file.",
-    "log_file": "~\\Documents\\Scratch\\Logs\\hike-seeker.log",
+    "log_file": "~\\Documents\\Scratch\\Logs\\hike-seeker2.log",
     
     "__comment": "Folder where caches of HTML documents should be stored",
-    "download_cache_folder": "~\\Documents\\Scratch\\PythonDownloadCache\\hike-seeker"
+    "download_cache_folder": "~\\Documents\\Scratch\\PythonDownloadCache\\hike-seeker",
+
+    "__comment": "Output folder for misc products, like the KML file",
+    "kml_output_folder": "~\\Documents\\Scratch\\PythonOutput"
 }

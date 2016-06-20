@@ -19,37 +19,6 @@ class SixFeetDownloader:
         self.trip_downloader = trip_downloader
         self.track_downloader = track_downloader
 
-    #
-    # def _parse_sentences_bing(self, dom):
-    #     dom_sentences = dom.xpath('//*[@class="se_li"]')
-    #     sentences = []
-    #
-    #     for s in list(dom_sentences):
-    #         english = "".join(s.xpath('.//*[@class="sen_en"]//text()'))
-    #         chinese = "".join(s.xpath('.//*[@class="sen_cn"]//text()'))
-    #
-    #         sentences.append({ "english": english, "chinese": chinese})
-    #
-    #     return sentences
-    #
-    # def _parse_sentences_iciba(self, dom):
-    #     import re
-    #
-    #     dom_sentences = dom.xpath('//*[@class="dj_li"]')
-    #     sentences = []
-    #
-    #     for s in list(dom_sentences):
-    #         # Can't use tokenize a la http://stackoverflow.com/questions/20692303/xslt-select-elements-that-have-multiple-class-values-based-off-of-1-of-those-v
-    #         # Get an unregistered function exception
-    #         raw_english = "".join(s.xpath('.//*[@class="stc_en_txt font_arial"]//text()'))
-    #         matches = re.search("^\d{1,2}\.\s(.*)$", raw_english.strip())
-    #         english = matches.group(1)
-    #         chinese = "".join(s.xpath('.//*[@class="stc_cn_txt"]//text()'))
-    #         chinese = chinese.strip()
-    #
-    #         sentences.append({ "english": english, "chinese": chinese})
-    #
-    #     return sentences
     def _parse_track_info_dom(self, dom):
         import re
         import datetime
@@ -108,6 +77,7 @@ class TripInfo:
         self.id = id
         self.title = title
         self.hike_date = hike_date
+        self.track = []
 
 
 class GpsTrackPoint:
