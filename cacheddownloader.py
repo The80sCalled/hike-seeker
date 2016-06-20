@@ -10,7 +10,7 @@ class CachedDownloader:
         self.cache_folder = cache_folder
         self.download_count = 0
         self.use_cache = use_cache
-        osutils.ensure_dir(self.cache_folder)
+        os.makedirs(self.cache_folder, exist_ok=True)
 
     def download(self, url):
         """

@@ -5,6 +5,7 @@ import os
 import osutils
 import shutil
 import unittest
+import logging
 
 class SixFeetDownloader:
 
@@ -81,7 +82,9 @@ class SixFeetDownloader:
         for i in range(1, num_pages + 1):
             url = SixFeetDownloader._FOOT_BASE_URL + SixFeetDownloader._TRIP_LISTING_URL.format("1")
             dom = html.fromstring(self.trip_downloader.download(url))
-            trip_info.extend(self._parse_track_info_dom(dom))
+            new_trips = self._parse_track_info_dom(dom)
+            trip_info.extend(new_trips)
+            logging.info("Downloaded {0} new trips, first one's date is {1}".format(len(new_trips), new_trips[0].hike_date))
 
         return trip_info
 

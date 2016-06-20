@@ -2,8 +2,7 @@ import os
 import shutil
 
 def ensure_dir(path):
-    if not os.path.exists(path):
-        os.mkdir(path)
+    os.makedirs(path, exist_ok=True)
 
 def clear_dir(path):
     if os.path.exists(path):
