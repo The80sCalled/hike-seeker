@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
     sfclient = sixfeet.SixFeetDownloader(cached_downloader, cached_downloader)
 
-    trips = sfclient.get_beijing_trip_info(1)
+    trips = sfclient.get_beijing_trip_info(range(1, 2))
     for t in trips:
         track = sfclient.get_track_json(t)
 

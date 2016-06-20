@@ -73,14 +73,14 @@ class SixFeetDownloader:
         return infos
 
 
-    def get_beijing_trip_info(self, num_pages):
+    def get_beijing_trip_info(self, page_range):
         """Downloads basic track summary info"""
         from lxml import html
 
         trip_info = []
 
-        for i in range(1, num_pages + 1):
-            url = SixFeetDownloader._FOOT_BASE_URL + SixFeetDownloader._TRIP_LISTING_URL.format("1")
+        for i in page_range:
+            url = SixFeetDownloader._FOOT_BASE_URL + SixFeetDownloader._TRIP_LISTING_URL.format(i)
             dom = html.fromstring(self.trip_downloader.download(url))
             new_trips = self._parse_track_info_dom(dom)
             trip_info.extend(new_trips)
@@ -126,6 +126,7 @@ class UnitTests(unittest.TestCase):
     def setUp(self):
         osutils.clear_dir(UnitTests._TEMP_CACHE_FOLDER)
         shutil.copytree("unittest\\test-data", UnitTests._TEMP_CACHE_FOLDER, True)
+        self.dl = cacheddownloader.CachedDownloader(UnitTests._TEMP_CACHE_FOLDER, True)
 
     def tearDown(self):
         pass
@@ -133,10 +134,9 @@ class UnitTests(unittest.TestCase):
     def test_track_list(self):
         import datetime
 
-        me = SixFeetDownloader(cacheddownloader.CachedDownloader(UnitTests._TEMP_CACHE_FOLDER, True),
-                               cacheddownloader.CachedDownloader(UnitTests._TEMP_CACHE_FOLDER, True))
+        me = SixFeetDownloader(self.dl, self.dl)
 
-        trips = me.get_beijing_trip_info(1)
+        trips = me.get_beijing_trip_info(range(1, 2))
         self.assertEqual(10, len(trips))
 
         self.assertEqual("672456", trips[0].id)
@@ -147,11 +147,19 @@ class UnitTests(unittest.TestCase):
 
         self.assertEqual(datetime.datetime(2106, 2, 7, 14, 28), trips[2].hike_date)
 
+    def test_track_list_page_2(self):
+        me = SixFeetDownloader(self.dl, self.dl)
+
+        trips = me.get_beijing_trip_info(range(1, 3))
+        self.assertEqual(20, len(trips))
+
+        self.assertEqual("753443", trips[12].id)
+        self.assertEqual("周六", trips[12].title)
+
     def test_track_points(self):
         import datetime
 
-        me = SixFeetDownloader(cacheddownloader.CachedDownloader(UnitTests._TEMP_CACHE_FOLDER, True),
-                               cacheddownloader.CachedDownloader(UnitTests._TEMP_CACHE_FOLDER, True))
+        me = SixFeetDownloader(self.dl, self.dl)
 
         fake_trip = TripInfo("931702", "20160618八大处-植物园", datetime.datetime(2016, 6, 18, 8, 53))
 

@@ -1,0 +1,2272 @@
+
+<!DOCTYPE html>
+<html>  
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="KML,PLT,GPX,航迹,GPS轨迹记录,户外自助游,深度游线路,轨迹下载,GPS手机轨迹记录" />
+        <meta name="description" content="行程列表为你提供最新的GPS轨迹线路,游记攻略,让你在六只脚行程列表中找到符合自己行程的轨迹路线,分享他们的游记攻略,六只脚支持plt,kml,gpx等格式的轨迹上传与下载" />
+        <meta name="author" content="六只脚" />
+        
+        <title>
+
+北京市_行程_GPS轨迹_GPS线路_游记攻略_六只脚
+
+</title>
+        <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
+        <link rel="bookmark" href="/static/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="/static/css/normalize.min.css" />
+        
+        
+    <link rel="stylesheet" href="/static/stylesheets/main.css" />
+    <link rel="stylesheet" href="/static/ad/css/adx.css" />
+    
+
+        
+<link rel="stylesheet" href="/static/stylesheets/header_footer.css" />
+
+
+<style>
+    a div.feedback:hover{
+        background-position: right;
+    }
+</style>
+
+
+        <!--[if lt IE 9]>
+        <script src="/static/js/html5.js"></script>
+        <![endif]-->
+        
+    <script src="/static/js/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://ditu.google.cn/maps/api/js?key=&sessor=false"></script>
+    <script src="/static/js/jquery.tools.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="/static/js/util.js"></script>
+    <script type="text/javascript" src="/static/js/ext/jquery.includemany-1.2.2.js"></script>
+    <script type="text/javascript" src="/static/js/global.js"></script>
+    
+
+        
+            
+
+<script type="text/javascript">
+    window.zhuge = window.zhuge || [];
+    window.zhuge.methods = "_init debug identify track trackLink trackForm page".split(" ");
+    window.zhuge.factory = function(b) {
+        return function() {
+            var a = Array.prototype.slice.call(arguments);
+            a.unshift(b);
+            window.zhuge.push(a);
+            return window.zhuge;
+        }
+    };
+    for (var i = 0; i < window.zhuge.methods.length; i++) {
+        var key = window.zhuge.methods[i];
+        window.zhuge[key] = window.zhuge.factory(key);
+    }
+    window.zhuge.load = function(b, x) {
+        if (!document.getElementById("zhuge-js")) {
+            var a = document.createElement("script");
+            var verDate = new Date();
+            var verStr = verDate.getFullYear().toString()
+                    + verDate.getMonth().toString() + verDate.getDate().toString();
+
+            a.type = "text/javascript";
+            a.id = "zhuge-js";
+            a.async = !0;
+            a.src = (location.protocol == 'http:' ? "http://sdk.zhugeio.com/zhuge-lastest.min.js?v=" : 'https://zgsdk.zhugeio.com/zhuge-lastest.min.js?v=') + verStr;
+            var c = document.getElementsByTagName("script")[0];
+            c.parentNode.insertBefore(a, c);
+            window.zhuge._init(b, x)
+        }
+    };
+    window.zhuge.load('e3b45ecf88a64f34a0a6ba4a94219aec');
+</script>
+
+        
+    </head>
+    <body>
+        
+    
+	<div class="container" id="container">
+	<style>
+	.kie-bar {
+	  height: 24px;
+	  line-height: 1.8;
+	  font-weight:normal;
+	  text-align: center;
+	  border-bottom:1px solid #fce4b5;
+	  background-color:#FFFF9B;
+	  color:#e27839;
+	  position: relative;
+	  font-size: 14px;
+	  text-shadow: 0px 0px 1px #efefef;
+	  padding: 5px 0;
+      margin-bottom: 10px;
+	}
+	.kie-bar a {
+	  color:#08c;
+	  text-decoration: none;
+	}
+	</style>
+        
+
+
+
+
+
+<div id="header">
+    <div class="top_nav_bg">
+        <div class="top_nav layoutFixed" style="z-index: 30;">
+            <div class="top-nav-lvye">
+                <span>&#187;</span><a href="http://www.lvye.cn" title="绿野户外网" target="_blank" style="color: #168405;">绿野户外网</a>
+                <span>&#124;</span><a href="http://event.lvye.cn/" title="户外活动" target="_blank" style="color: #168405;">户外活动</a>
+                <span>&#124;</span><a href="http://bbs.lvye.cn" title="绿野论坛" target="_blank" style="color: #168405;">绿野论坛</a>
+            </div>
+            <div class="user-info">
+                
+                <a href="/accounts/login/"><font style="color: #6bb5e2; padding: 0 3px;">登录</font></a>
+                <a href="/accounts/register/"><font style="color: #6bb5e2; padding: 0 3px;">注册</font></a>
+                <span> &nbsp;&#124;&nbsp; 或使用 </span>
+                <a href="/qq/login/" > <img alt="QQ号登录" src="/static/images/qq_logo.jpg"></img></a>
+                <a href="/sina/login/"> <img alt="新浪登录" src="/static/images/sina_logo.jpg"></img></a>
+                <span> 登录 </span>
+                
+            </div>
+            
+            <a href="/promo/redeem/" class="promo" style="display: block; width: 5em; float: right;color: orange; font-weight: bold;">礼品兑换</a>
+        </div>
+    </div>
+    <div class="layoutFixed">
+        <a href="/" title="记录分享你的足迹-六只脚" alt="记录分享你的足迹-六只脚"> <img width="250px" height="80px" src="/static/sixfoot/images/sixfoot_logo.png" title="记录分享你的足迹-六只脚" alt="记录分享你的足迹-六只脚" /></a>
+    </div>
+    <div class="layoutFit menu">
+        <div id="navbar">
+            <span><a class="sub-menu-link" href="/"><h3 class="">首页</h3></a></span>
+            <span class="sub-menu"> <a class="sub-menu-link" href="/trips/"> <h3 class="menuOn">行程 <i class="icon-navbar-arrow"></i></h3></a>
+                <div class="navbar-items">
+                    <div class="navbar-items-menu">
+                        <div class="navbar-items-menu-row">
+                            <div class="content">
+                                <a class="red bold" href="/trips/" >全站热门</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="green bold" href="/search/trip/all/1/recommend/create_time/descent/?keyword=">最新推荐</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="green" href="/search/trip/all/1/all/create_time/descent/?keyword=">最近上传</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="bold" href="/search/trip/all/1/with_pics/create_time/descent/?keyword=">美图行程</a>
+                            </div>
+                        </div>
+                        <div class="navbar-items-menu-row">
+                            <div class="title">
+                                北京：
+                            </div>
+                            <div class="content">
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=海陀">海陀</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=小五台">小五台</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=后河">后河</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=老掌沟">老掌沟</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=妙峰山">妙峰山</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=夜爬">夜爬路线</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=箭扣">箭扣</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=灵山">灵山</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=云蒙">云蒙</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=黄草梁">黄草梁</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=幽州">幽州</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=京西古道">京西古道</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=猫耳山">猫耳山</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=茶山">茶山</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/2/all/default/descent/">更多...</a>
+                            </div>
+                        </div>
+                        <div class="navbar-items-menu-row">
+                            <div class="title">
+                                广东：
+                            </div>
+                            <div class="content">
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=凤凰山">凤凰山</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=罗浮山">罗浮山</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                 <a class="" href="/search/trip/all/1/all/default/descent/?keyword=船底顶">船底顶</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=仙湖">仙湖</a>                         
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=牛背脊">牛背脊</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                 <a class="" href="/search/trip/all/1/all/default/descent/?keyword=白马山">白马山</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=观音山">观音山</a>
+                             </div>
+                        </div>
+                        <div class="navbar-items-menu-row">
+                            <div class="title">
+                                浙江：
+                            </div>
+                            <div class="content">
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=横溪古道">横溪古道</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=天目山">天目山</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=十字峡谷">十字峡谷</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=雁荡山">雁荡山</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=大明山">大明山</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=十字峡谷">十字峡谷</a>
+                            </div>
+                        </div>
+                        <div class="navbar-items-menu-row">
+                            <div class="title">
+                                西北：
+                            </div>
+                            <div class="content">
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=太白山">太白山</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=大五台">大五台</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=南北驼梁">南北驼梁</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=库布齐">库布齐</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=青海湖">青海湖</a>                                                                       
+                               <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=喀纳斯">喀纳斯</a>                                                                       
+                               <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=天山">天山</a>                                                                       
+                            </div>
+                        </div>
+                        <div class="navbar-items-menu-row">
+                            <div class="title">
+                                川藏：
+                            </div>
+                            <div class="content">
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=四姑娘山">四姑娘山</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=龙眼">龙眼</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=贡嘎">贡嘎</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=稻城">稻城</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=墨脱">墨脱</a>
+                               <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=318">318</a>
+                            </div>
+                        </div>
+                          <div class="navbar-items-menu-row">
+                            <div class="title">
+                                其它：
+                            </div>
+                            <div class="content">
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=长白山">长白山</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=武功山">武功山</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=牯牛降">牯牛降</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=张家界">张家界</a>
+                               <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=年保玉则">年保玉则</a>
+                              <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=狼塔">狼塔</a>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <table class="navbar-items-menu hide" style="width: 600px;">
+                        <tr>
+                            <td><h2>类&nbsp;&nbsp;型：</h2></td>
+                            <td><a href="/search/trip/all/1/all/default/descent/?keyword=">全部</a><a href="/search/trip/sightseeing/1/all/default/descent/?keyword=">观光旅游</a><a href="/search/trip/photography/1/all/default/descent/?keyword=">摄影</a><a href="/search/trip/hiking/1/all/default/descent/?keyword=">徒步</a><a href="/search/trip/mountaineering/1/all/default/descent/?keyword=">登山</a><a href="/search/trip/driving/1/all/default/descent/?keyword=">自驾车</a><a href="/search/trip/cross_country/1/all/default/descent/?keyword=">越野</a><a href="/search/trip/motorcycling/1/all/default/descent/?keyword=">摩托车</a><a href="/search/trip/mountain_biking/1/all/default/descent/?keyword=">山地骑行</a><a href="/search/trip/road_biking/1/all/default/descent/?keyword=">公路骑行</a><a href="/search/trip/running/1/all/default/descent/?keyword=">跑步</a><a href="/search/trip/skiing/1/all/default/descent/?keyword=">滑雪</a><a href="/search/trip/sailing/1/all/default/descent/?keyword=">航海</a><a href="/search/trip/paragliding/1/all/default/descent/?keyword=">滑翔伞</a><a href="/search/trip/geocaching/1/all/default/descent/?keyword=">寻宝</a><a href="/search/trip/gps_drawing/1/all/default/descent/?keyword=">Gps作画</a><a href="/search/trip/other/1/all/default/descent/?keyword=">其他</a></td>
+                        </tr>
+                        <tr>
+                            <td><h2>地&nbsp;&nbsp;域：</h2></td>
+                            <td><a href="/search/trip/all/0/all/default/descent/?keyword=">境外</a><a href="/search/trip/all/1/all/default/descent/?keyword=">境内</a><a href="/search/trip/all/2/all/default/descent/?keyword=">北京</a><a href="/search/trip/all/3/all/default/descent/?keyword=">天津</a><a href="/search/trip/all/4/all/default/descent/?keyword=">河北</a><a href="/search/trip/all/5/all/default/descent/?keyword=">山西</a><a href="/search/trip/all/6/all/default/descent/?keyword=">内蒙古</a><a href="/search/trip/all/7/all/default/descent/?keyword=">辽宁</a><a href="/search/trip/all/8/all/default/descent/?keyword=">吉林</a><a href="/search/trip/all/9/all/default/descent/?keyword=">黑龙江</a><a href="/search/trip/all/10/all/default/descent/?keyword=">上海</a><a href="/search/trip/all/11/all/default/descent/?keyword=">江苏</a><a href="/search/trip/all/12/all/default/descent/?keyword=">浙江</a><a href="/search/trip/all/13/all/default/descent/?keyword=">安徽</a><a href="/search/trip/all/14/all/default/descent/?keyword=">福建</a><a href="/search/trip/all/15/all/default/descent/?keyword=">江西</a><a href="/search/trip/all/16/all/default/descent/?keyword=">山东</a><a href="/search/trip/all/17/all/default/descent/?keyword=">河南</a><a href="/search/trip/all/18/all/default/descent/?keyword=">湖北</a><a href="/search/trip/all/19/all/default/descent/?keyword=">湖南</a><a href="/search/trip/all/20/all/default/descent/?keyword=">广东</a><a href="/search/trip/all/21/all/default/descent/?keyword=">广西</a><a href="/search/trip/all/22/all/default/descent/?keyword=">海南</a><a href="/search/trip/all/23/all/default/descent/?keyword=">重庆</a><a href="/search/trip/all/24/all/default/descent/?keyword=">四川</a><a href="/search/trip/all/25/all/default/descent/?keyword=">贵州</a><a href="/search/trip/all/26/all/default/descent/?keyword=">云南</a><a href="/search/trip/all/27/all/default/descent/?keyword=">西藏</a><a href="/search/trip/all/28/all/default/descent/?keyword=">陕西</a><a href="/search/trip/all/29/all/default/descent/?keyword=">甘肃</a><a href="/search/trip/all/30/all/default/descent/?keyword=">青海</a><a href="/search/trip/all/31/all/default/descent/?keyword=">宁夏</a><a href="/search/trip/all/32/all/default/descent/?keyword=">新疆</a><a href="/search/trip/all/33/all/default/descent/?keyword=">台湾</a><a href="/search/trip/all/34/all/default/descent/?keyword=">香港</a><a href="/search/trip/all/35/all/default/descent/?keyword=">澳门</a></td>
+                        </tr>
+                        <tr>
+                            <td><h2> 六只脚  应用 </h2></td>
+                            <td> 安心游，六只脚行踪，绿野活动 </td>
+                        </tr>
+                    </table>
+                </div> </span>
+            <span class="sub-menu"><a class="sub-menu-link" href="/map/"><h3>地图 <i class="icon-navbar-arrow"></i></h3></a>
+                <div class="navbar-items">
+                    <div class="navbar-items-menu">
+                        <div class="navbar-items-menu-row">
+                            <div class="title">
+                                北京：
+                            </div>
+                            <div class="content">
+                                <a class="red" href="/map/?map=map&uid=12#s=hot|uid=12|lt=39.97617206399005|lg=116.16837092321771|z=13|a=all|tid=1129|startcoordinate=116.154968,39.953804|endcoordinate=116.198425,40.006817|t=1129*0,5244*0,2433*2,35528*3,1819*4,8773*5,35983*6,38382*1|f=1|mtid=hybrid|sf=0">香巴拉徒步入门</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="orange" href="/map/#lt=39.92719233576437|lg=115.03323527675776|z=12|s=hot|a=all|t=1261*0,3416*1,832*2,1611*4,13799*5|f=1|uid=-1|mtid=hybrid|sf=0">小五台茶山地区</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="green" href="/map/#lt=40.51762727557611|lg=115.96073010571286|z=12|s=hot|a=all|t=1431*0,2828*1,35962*2,9792*5,2182*0,31575*5,27604*2|f=1|uid=-1|mtid=hybrid|sf=0">海陀山-后河</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="bold" href="/map/#lt=40.95768031012643|lg=116.48480388027339|z=10|s=hot|a=all|t=2444*0,2353*1,2352*2,11196*3,12540*6,23432*2|f=1|uid=-1|mtid=hybrid|sf=0">老掌沟-沽源</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="red" href="/map/#lt=42.3444098885258|lg=117.75029155117183|z=10|s=hot|a=all|t=2056*0,29823*1,3149*3,30316*4,14233*5|f=1|uid=-1|mtid=hybrid|sf=0">塞罕坝-乌兰布统</a>
+<!--                                     <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=茶山">茶山</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=灵山">灵山</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=云蒙">云蒙</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=黄草梁">黄草梁</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=幽州">幽州</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/1/all/default/descent/?keyword=灵山">灵山</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="/search/trip/all/2/all/default/descent/">更多...</a> -->
+                            </div>
+                        </div>
+                        <div class="navbar-items-menu-row">
+                            <div class="title">
+                                广东：
+                            </div>
+                            <div class="content">
+                                <a class="" >凤凰山</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" >罗浮山</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" >船底顶</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" >仙湖</a>
+
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="navbar-items-menu-row">
+                            <div class="title">
+                                浙江：
+                            </div>
+                            <div class="content">
+                                <a class="" >横溪古道</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" >天目山</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" >十字峡谷</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" >雁荡山</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" >十字峡谷</a>
+
+                            </div>
+                        </div>
+                        <div class="navbar-items-menu-row">
+                            <div class="title">
+                                西北：
+                            </div>
+                            <div class="content">
+                                <a class="">太白山</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" >大五台</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" >南北驼梁</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" >库布齐</a>
+                            </div>
+                        </div>
+                        <div class="navbar-items-menu-row">
+                            <div class="title">
+                                川藏：
+                            </div>
+                            <div class="content">
+                                <a class="" >四姑娘山</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" >贡嘎</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" >稻城</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" >墨脱</a>
+                               <i>&nbsp;|&nbsp;</i>
+                                <a class="" >318</a>
+                            </div>
+                        </div>
+                          <div class="navbar-items-menu-row">
+                            <div class="title">
+                                其它：
+                            </div>
+                            <div class="content">
+                                <a class="" >长白山</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" >武功山</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" >牯牛降</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" >张家界</a>
+                               <i>&nbsp;|&nbsp;</i>
+                                <a class="" >xxx</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> </span>
+            <span class="sub-menu"><a class="sub-menu-link" href="/channel/"><h3>精选 <i class="icon-navbar-arrow"></i></h3></a>
+                <div class="navbar-items" style="left: -80px;">
+                    <div class="navbar-items-menu">
+                                                    <div class="navbar-items-menu-row">
+                            <div class="content">
+                                <a class="red bold" href="/channel/hiking/" >徒步登山</a>
+                                <i>&nbsp;|&nbsp;&nbsp;</i>
+                                <a class="green bold" href="/channel/biking/">山地公路骑行</a>
+                                <i>&nbsp;|&nbsp;&nbsp;</i>
+                                <a class="orange bold" href="/channel/driving/">自驾越野</a>
+                                <i>&nbsp;|&nbsp;&nbsp;</i>
+                                <a class="red bold" href="/channel/sightseeing/">自助旅行</a>
+                                <i>&nbsp;|&nbsp;&nbsp;</i>
+                                <a class="bold" href="/channel/other/">杂七杂八</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> </span>
+            <span class="sub-menu"><a class="sub-menu-link" target="_blank" href="http://www.lvye.cn/huodong"><h3>活动 <i class="icon-navbar-arrow"></i></h3></a>
+                <div class="navbar-items" style="left: -120px;">
+                    <div class="navbar-items-menu">
+                        <div class="navbar-items-menu-row">
+                            <div class="title">
+                                查找活动：
+                            </div>
+                            <div class="content">
+                                <a class="" target="_blank" href="http://www.lvye.cn/huodong">全部活动</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" target="_blank" href="http://www.lvye.cn/huodong/-benzhoumo-/">本周活动</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" target="_blank" href="http://www.lvye.cn/huodong/-pingri-/">近期活动</a>
+                            </div>
+                        </div>
+                        <div class="navbar-items-menu-row">
+                            <div class="title">
+                                                                                               分类活动：
+                            </div>
+                            <div class="content">
+                                <a class="" href="http://www.lvye.cn/huodong/--/?property=aa">AA自助活动</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="http://www.lvye.cn/huodong/--/?property=commercial">俱乐部活动</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="http://huaxue.lvye.cn">滑雪活动</a>
+                            </div>
+                        </div>
+                        <div class="navbar-items-menu-row">
+                            <div class="title">
+                                专题活动：
+                            </div>
+                            <div class="content">
+                                <a class="" href="http://www.lvye.cn/topicid-16.html" target="_blank">领队培训</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="http://rescue.lvye.cn/topic/shalong/">绿野沙龙</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a class="" href="http://bbs.lvye.cn/thread-599416-1-1.html">户外大讲堂</a>
+                            </div>
+                        </div>
+                    </div>
+                </div></span>
+            <span class="sub-menu"><a class="sub-menu-link" href="/footprints/"><h3>脚印 <i class="icon-navbar-arrow"></i></h3></a>
+                <div class="navbar-items" style="left: -120px;">
+                    <div class="navbar-items-menu">
+                        <div class="navbar-items-menu-row">
+                            <div class="title">
+                                热门：
+                            </div>
+                            <div class="content">
+                                <a href="/search/footprint/0/time/descent/?keyword="> 境外 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/2/time/descent/?keyword="> 北京 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/3/time/descent/?keyword="> 天津 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/4/time/descent/?keyword="> 河北 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/5/time/descent/?keyword="> 山西 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/6/time/descent/?keyword="> 内蒙古 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/7/time/descent/?keyword="> 辽宁 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/8/time/descent/?keyword="> 吉林 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/9/time/descent/?keyword="> 黑龙江 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/10/time/descent/?keyword="> 上海 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/11/time/descent/?keyword="> 江苏 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/12/time/descent/?keyword="> 浙江 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/13/time/descent/?keyword="> 安徽 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/14/time/descent/?keyword="> 福建 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/15/time/descent/?keyword="> 江西 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/16/time/descent/?keyword="> 山东 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/17/time/descent/?keyword="> 河南 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/18/time/descent/?keyword="> 湖北 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/19/time/descent/?keyword="> 湖南 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/20/time/descent/?keyword="> 广东 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/21/time/descent/?keyword="> 广西 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/22/time/descent/?keyword="> 海南 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/23/time/descent/?keyword="> 重庆 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/24/time/descent/?keyword="> 四川 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/25/time/descent/?keyword="> 贵州 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/26/time/descent/?keyword="> 云南 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/27/time/descent/?keyword="> 西藏 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/28/time/descent/?keyword="> 陕西 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/29/time/descent/?keyword="> 甘肃 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/30/time/descent/?keyword="> 青海 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/31/time/descent/?keyword="> 宁夏 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/32/time/descent/?keyword="> 新疆 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/33/time/descent/?keyword="> 台湾 </a>
+                                <i>&nbsp;|&nbsp;</i><a href="/search/footprint/34/time/descent/?keyword="> 香港 </a>
+                                <!-- <i>&nbsp;|&nbsp;</i><a href="/search/footprint/35/time/descent/?keyword="> 澳门 </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div> </span>
+            <span class="sub-menu"><a class="sub-menu-link" href="/app/main/"><h3 class="">手机 <i class="icon-navbar-arrow"></i></h3></a>
+                <div class="navbar-items" style="left: -120px;">
+                    <div class="navbar-items-menu" style="width: 400px;">
+                        <div class="navbar-items-menu-row">
+                            <p style="text-align: left; padding: 10px;color: #639805; font-size: 20px; font-family: 微软雅黑;  font-weight: bold;">
+                                六只脚推荐应用
+                            </p>
+                        </div>
+                        <div class="navbar-items-menu-row">
+                            <table style="width: 100%;text-align: center; background-color: #F7F7F7;">
+                                <tr><td>&nbsp;</td></tr>
+                                <tr>
+                                    <td><a href="/app/main/"><img src="/static/images/icon_liuzhijiao_64x64.png" /></a></td>
+                                    <td><a href="http://www.lvye.cn/app/huodong/" target="_blank"><img src="/static/images/icon_lvye_huodong_64x64.png" /></a></td>
+                                    <td><a href="http://bbs.lvye.cn/topicid-25.html"><img src="/static/images/icon_ski_64x64.png" /></a></td>
+                                </tr>
+                                <tr>
+                                    <td>六只脚行踪</td>
+                                    <td>绿野活动</td>
+                                    <td>绿野滑雪达人</td>
+                                </tr>
+                                <tr><td>&nbsp;</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                </div></span>
+            <span class="sub-menu"><a class="sub-menu-link" target="_blank" href="http://bbs.foooooot.com"><h3>论坛 <i class="icon-navbar-arrow"></i></h3></a>
+                <div class="navbar-items" style="left: -160px;">
+                    <div class="navbar-items-menu">
+                        <div class="navbar-items-menu-row">
+                            <div class="title">
+                                <a href="http://bbs.lvye.cn/forum.php?gid=348">户外推荐</a>
+                            </div>
+                            <div class="content">
+                                <a href="http://bbs.foooooot.com" target="_blank" class="green bold">六只脚</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a href="http://bbs.lvye.cn/forum-7-1.html" target="_blank" class="red bold">绿野风版</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a href="http://bbs.lvye.cn/forum-1841-1.html">跑步</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a href="http://bbs.lvye.cn/forum-359-1.html">户二代</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a href="http://rescue.lvye.cn/">救援队</a>
+                            </div>
+                        </div>
+                        <div class="navbar-items-menu-row">
+                            <div class="title">
+                                <a href="http://bbs.lvye.cn/forum.php?gid=105">户外旅游</a>
+                            </div>
+                            <div class="content">
+                                <a href="http://bbs.lvye.cn/forum-1815-1.html">背包自助</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a href="http://bbs.lvye.cn/forum-2-1.html">AA活动</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a href="http://bbs.lvye.cn/forum-351-1.html">自由结伴</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a href="http://bbs.lvye.cn/forum-1562-1.html">活动照片</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a href="http://bbs.lvye.cn/forum-8-1.html">游记攻略</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a href="http://bbs.lvye.cn/forum-354-1.html">户外摄影</a>
+                            </div>
+                        </div>
+                        <div class="navbar-items-menu-row">
+                            <div class="title">
+                                <a href="http://bbs.lvye.cn/forum.php?gid=107">户外运动</a>
+                            </div>
+                            <div class="content">
+                                <a href="http://bbs.lvye.cn/forum-88-1.html">垂直极限</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a href="http://bbs.lvye.cn/forum-19-1.html">滑雪</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a href="http://bbs.lvye.cn/forum-21-1.html">马队</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a href="http://bbs.lvye.cn/forum-1559-1.html">自驾</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a href="http://bbs.lvye.cn/forum-26-1.html">骑行</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a href="http://eco.lvye.cn/">生态户外</a>
+                            </div>
+                        </div>
+                        <div class="navbar-items-menu-row">
+                            <div class="title">
+                                <a href="http://bbs.lvye.cn/forum.php?gid=106">户外装备</a>
+                            </div>
+                            <div class="content">
+                                <a href="http://bbs.lvye.cn/forum-15-1.html">装备讨论</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a href="http://bbs.lvye.cn/forum-358-1.html">装备评测</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a href="http://bbs.lvye.cn/forum-16-1.html">装备交易</a>
+                            </div>
+                        </div>
+                        <div class="navbar-items-menu-row">
+                            <div class="title">
+                                <a href="http://bbs.lvye.cn/forum.php?gid=100">户外生活</a>
+                            </div>
+                            <div class="content">
+                                <a href="http://bbs.lvye.cn/forum-361-1.html">灌水</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a href="http://bbs.lvye.cn/forum-1923-1.html">美驴</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a href="http://bbs.lvye.cn/forum-1868-1.html">美食</a>
+                            </div>
+                        </div>
+                        <div class="navbar-items-menu-row">
+                            <div class="title"></div>
+                            <div class="content">
+                                <a href="http://bbs.lvye.cn/forum.php?gid=344">地方论坛</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a href="http://bbs.lvye.cn/forum-365-1.html">投诉建议</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a href="http://bbs.lvye.cn/forum-1919-1.html">领队专版</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a href="http://bbs.lvye.cn/forum-1872-1.html">在路上 有红牛</a>
+                                <i>&nbsp;|&nbsp;</i>
+                                <a href="http://www.lvye.cn/plugin.php?id=drc_qqgroup:main">QQ群联盟</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> </span>
+        </div>
+        <div class="navbtn">
+            <a href="/trip/create/" class=""><img src="/static/sixfoot/images/header/route.png" /></a>
+            <a href="/events/" class=""><img src="/static/sixfoot/images/header/hot.png" /></a>
+            <a href="http://www.foooooot.com/page/about/guan_yu_wo_men.html" class=""><img src="/static/sixfoot/images/header/us.png" /></a>
+        </div>
+    </div>
+</div>
+
+
+
+        
+        
+        
+
+        
+        
+        
+
+        
+<!--main -->
+<div class="layoutFit pageWrap" tr="mod3" style="padding-top:10px;">
+  <div class="right Column220 recommend-footprints">
+    <h2 class="title">看看TA们都去了哪</h2>
+    
+    <div class="footprint">
+        <a href="/trip/1301/"><img class="footprint" src="http://www.foooooot.com/media/upload/footprint/2010/06/20/gallery.1277014849340.jpg" /></a>
+        <p class="footprint-title">
+            <a href="/trip/1301/">箭扣长城徒步穿越（西栅子-北京结-鹰飞倒仰-天梯-将军楼）</a> 2010-06-20
+        </p>
+        <div class="footprint-trip-content">
+            
+        </div>
+        <br />
+    </div>
+    
+    <div class="footprint">
+        <a href="/trip/255/"><img class="footprint" src="http://www.foooooot.com/media/upload/footprint/2010/03/17/gallery.1268821930012.png" /></a>
+        <p class="footprint-title">
+            <a href="/trip/255/">北京--满洲里  火车出行</a> 2010-03-17
+        </p>
+        <div class="footprint-trip-content">
+            <p><span style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 12px Arial; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px"><span style="FONT-SIZE: 18px; FONT-WEIGHT: 800">哈尔滨站2站台</span></span></p>
+        </div>
+        <br />
+    </div>
+    
+    <div class="footprint">
+        <a href="/trip/120/"><img class="footprint" src="http://www.foooooot.com/media/upload/footprint/2010/03/14/gallery.1268566719300.jpg" /></a>
+        <p class="footprint-title">
+            <a href="/trip/120/">泰山之行</a> 2010-03-14
+        </p>
+        <div class="footprint-trip-content">
+            <p>好漂亮，在那里呆了好久才离开</p>
+        </div>
+        <br />
+    </div>
+    
+    <div class="footprint">
+        <a href="/trip/40118/"><img class="footprint" src="http://www.foooooot.com/media/upload/footprint/2012/11/20/gallery.1353416527167.jpg" /></a>
+        <p class="footprint-title">
+            <a href="/trip/40118/">大五台,小五台,箭扣,海坨,泰山等线路汇总(整理,超值)</a> 2012-11-20
+        </p>
+        <div class="footprint-trip-content">
+            北京箭扣长城                                
+        </div>
+        <br />
+    </div>
+    
+    <div class="footprint">
+        <a href="/trip/2295/"><img class="footprint" src="http://www.foooooot.com/media/upload/footprint/2010/08/22/gallery.1282463626784.jpg" /></a>
+        <p class="footprint-title">
+            <a href="/trip/2295/">下马威—东灵山—北灵山—黄草梁—柏峪—爨底下—斋堂ZN穿越</a> 2010-08-22
+        </p>
+        <div class="footprint-trip-content">
+            
+        </div>
+        <br />
+    </div>
+    
+</div>
+
+    <div class="left240">
+        <div class="key left title" >
+            <ul class="listLocation">  
+                <li>
+                    <h2>类&nbsp;&nbsp;型：</h2>
+                </li>
+                <li>
+                  
+                  <span>全部</span>
+                  
+                  </li>
+                
+                <li class='left'>
+                    
+                    <a href="/search/trip/sightseeing/2/all/occurtime/descent/?keyword=">观光旅游<span class="num"></span></a>
+                    
+                </li>
+                
+                <li class='left'>
+                    
+                    <a href="/search/trip/photography/2/all/occurtime/descent/?keyword=">摄影<span class="num"></span></a>
+                    
+                </li>
+                
+                <li class='left'>
+                    
+                    <a href="/search/trip/biking/2/all/occurtime/descent/?keyword=">骑行<span class="num"></span></a>
+                    
+                </li>
+                
+                <li class='left'>
+                    
+                    <a href="/search/trip/hiking/2/all/occurtime/descent/?keyword=">徒步<span class="num"></span></a>
+                    
+                </li>
+                
+                <li class='left'>
+                    
+                    <a href="/search/trip/mountaineering/2/all/occurtime/descent/?keyword=">登山<span class="num"></span></a>
+                    
+                </li>
+                
+                <li class='left'>
+                    
+                    <a href="/search/trip/driving/2/all/occurtime/descent/?keyword=">自驾车<span class="num"></span></a>
+                    
+                </li>
+                
+                <li class='left'>
+                    
+                    <a href="/search/trip/cross_country/2/all/occurtime/descent/?keyword=">越野<span class="num"></span></a>
+                    
+                </li>
+                
+                <li class='left'>
+                    
+                    <a href="/search/trip/motorcycling/2/all/occurtime/descent/?keyword=">摩托车<span class="num"></span></a>
+                    
+                </li>
+                
+                <li class='left'>
+                    
+                    <a href="/search/trip/mountain_biking/2/all/occurtime/descent/?keyword=">山地骑行<span class="num"></span></a>
+                    
+                </li>
+                
+                <li class='left'>
+                    
+                    <a href="/search/trip/road_biking/2/all/occurtime/descent/?keyword=">公路骑行<span class="num"></span></a>
+                    
+                </li>
+                
+                <li class='left'>
+                    
+                    <a href="/search/trip/running/2/all/occurtime/descent/?keyword=">跑步<span class="num"></span></a>
+                    
+                </li>
+                
+                <li class='left'>
+                    
+                    <a href="/search/trip/skiing/2/all/occurtime/descent/?keyword=">滑雪<span class="num"></span></a>
+                    
+                </li>
+                
+                <li class='left'>
+                    
+                    <a href="/search/trip/sailing/2/all/occurtime/descent/?keyword=">航海<span class="num"></span></a>
+                    
+                </li>
+                
+                <li class='left'>
+                    
+                    <a href="/search/trip/paragliding/2/all/occurtime/descent/?keyword=">滑翔伞<span class="num"></span></a>
+                    
+                </li>
+                
+                <li class='left'>
+                    
+                    <a href="/search/trip/geocaching/2/all/occurtime/descent/?keyword=">寻宝<span class="num"></span></a>
+                    
+                </li>
+                
+                <li class='left'>
+                    
+                    <a href="/search/trip/gps_drawing/2/all/occurtime/descent/?keyword=">Gps作画<span class="num"></span></a>
+                    
+                </li>
+                
+                <li class='left'>
+                    
+                    <a href="/search/trip/skateboard/2/all/occurtime/descent/?keyword=">滑板<span class="num"></span></a>
+                    
+                </li>
+                
+                <li class='left'>
+                    
+                    <a href="/search/trip/other/2/all/occurtime/descent/?keyword=">其他<span class="num"></span></a>
+                    
+                </li>
+                 
+            </ul>    
+        </div>
+        <div class="key left title">
+            <ul class="listLocation left">
+                <li>
+                    <h2>地&nbsp;&nbsp;域：</h2>
+                </li>
+                <li>
+                
+                <a href="/search/trip/all/0/all/occurtime/descent/?keyword=">境外</a>
+                
+                </li>
+                <li>
+                
+                <a href="/search/trip/all/1/all/occurtime/descent/?keyword=">境内</a>
+                
+                </li>
+                
+                
+                <li style=''> 
+                    
+                        <span>北京</span>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/3/all/occurtime/descent/?keyword=">天津</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/4/all/occurtime/descent/?keyword=">河北</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/5/all/occurtime/descent/?keyword=">山西</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/6/all/occurtime/descent/?keyword=">内蒙古</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/7/all/occurtime/descent/?keyword=">辽宁</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/8/all/occurtime/descent/?keyword=">吉林</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/9/all/occurtime/descent/?keyword=">黑龙江</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/10/all/occurtime/descent/?keyword=">上海</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/11/all/occurtime/descent/?keyword=">江苏</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/12/all/occurtime/descent/?keyword=">浙江</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/13/all/occurtime/descent/?keyword=">安徽</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/14/all/occurtime/descent/?keyword=">福建</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/15/all/occurtime/descent/?keyword=">江西</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/16/all/occurtime/descent/?keyword=">山东</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/17/all/occurtime/descent/?keyword=">河南</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/18/all/occurtime/descent/?keyword=">湖北</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/19/all/occurtime/descent/?keyword=">湖南</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/20/all/occurtime/descent/?keyword=">广东</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/21/all/occurtime/descent/?keyword=">广西</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/22/all/occurtime/descent/?keyword=">海南</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/23/all/occurtime/descent/?keyword=">重庆</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/24/all/occurtime/descent/?keyword=">四川</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/25/all/occurtime/descent/?keyword=">贵州</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/26/all/occurtime/descent/?keyword=">云南</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/27/all/occurtime/descent/?keyword=">西藏</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/28/all/occurtime/descent/?keyword=">陕西</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/29/all/occurtime/descent/?keyword=">甘肃</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/30/all/occurtime/descent/?keyword=">青海</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/31/all/occurtime/descent/?keyword=">宁夏</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/32/all/occurtime/descent/?keyword=">新疆</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/33/all/occurtime/descent/?keyword=">台湾</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/34/all/occurtime/descent/?keyword=">香港</a>
+                    
+                    </li>
+                
+                <li style=''> 
+                    
+                    <a href="/search/trip/all/35/all/occurtime/descent/?keyword=">澳门</a>
+                    
+                    </li>
+                
+            </ul>
+        </div>
+        
+            <div class="key region-list-citys">
+                <ul class="listLocation left">
+                    <li>
+                        
+                        <span>全部</span>
+                        
+                    </li>
+                    
+                        <li>
+                        
+                        <a href="/search/trip/all/432/all/occurtime/descent/?keyword=">北京市区</a>
+                        
+                        </li>
+                    
+                        <li>
+                        
+                        <a href="/search/trip/all/433/all/occurtime/descent/?keyword=">房山区</a>
+                        
+                        </li>
+                    
+                        <li>
+                        
+                        <a href="/search/trip/all/2653/all/occurtime/descent/?keyword=">通州区</a>
+                        
+                        </li>
+                    
+                        <li>
+                        
+                        <a href="/search/trip/all/2654/all/occurtime/descent/?keyword=">顺义区</a>
+                        
+                        </li>
+                    
+                        <li>
+                        
+                        <a href="/search/trip/all/2655/all/occurtime/descent/?keyword=">昌平区</a>
+                        
+                        </li>
+                    
+                        <li>
+                        
+                        <a href="/search/trip/all/2656/all/occurtime/descent/?keyword=">大兴区</a>
+                        
+                        </li>
+                    
+                        <li>
+                        
+                        <a href="/search/trip/all/2657/all/occurtime/descent/?keyword=">怀柔区</a>
+                        
+                        </li>
+                    
+                        <li>
+                        
+                        <a href="/search/trip/all/2658/all/occurtime/descent/?keyword=">平谷区</a>
+                        
+                        </li>
+                    
+                        <li>
+                        
+                        <a href="/search/trip/all/2660/all/occurtime/descent/?keyword=">密云县</a>
+                        
+                        </li>
+                    
+                        <li>
+                        
+                        <a href="/search/trip/all/2661/all/occurtime/descent/?keyword=">延庆县</a>
+                        
+                        </li>
+                    
+                </ul>
+            </div>
+        
+        <br />
+        
+<style type="text/css" media="screen">
+    .tripsList {
+        display: inline;
+    }
+    .tripsList li.title a {
+        margin-right: 6px;
+        padding: 4px;
+        text-decoration: none;
+    }
+    .tripsList li.title a.current {
+        background-color: #336699;
+        color: #fff
+    }
+    .null_trip {
+        width: 570px;
+        margin: 0 auto;
+        height: 128px;
+        line-height: 128px;
+        text-align: center;
+        font-size: 16px;
+        color: #336699;
+    }
+    .stars-background {
+        height: 16px;
+        width: 80px;
+        background-image: url("/static/sixfoot/images/star.png");
+        background-repeat: repeat-x;
+    }
+    .stars-yellow {
+        height: 16px;
+        width: 50px;
+        background-image: url("/static/sixfoot/images/star.png");
+        background-repeat: repeat-x;
+        background-position: 0 -16px;
+    }
+    .trip-icon-summaries {
+        padding-left: 20px;
+        height: 20px;
+        line-height: 20px;
+    }
+    .icon-trip-views {
+        background-image: url("/static/sixfoot/images/common_icons.png");
+        background-repeat: no-repeat;
+        background-position: -110px 0px;
+        width: 24px;
+        height: 20px;
+        display: inline-block;
+    }
+    .icon-trip-comments {
+        background-image: url("/static/sixfoot/images/common_icons.png");
+        background-repeat: no-repeat;
+        background-position: -138px 0px;
+        width: 24px;
+        height: 20px;
+        display: inline-block;
+    }
+    .icon-trip-downloads {
+        background-image: url("/static/sixfoot/images/common_icons.png");
+        background-repeat: no-repeat;
+        background-position: -102px -23px;
+        width: 24px;
+        height: 20px;
+        display: inline-block;
+    }
+    .icon-trip-favorite {
+        background-image: url("/static/sixfoot/images/common_icons.png");
+        background-repeat: no-repeat;
+        background-position: -138px -23px;
+        width: 24px;
+        height: 20px;
+        display: inline-block;
+    }
+    .trip-icon-summaries i {
+        float: left;
+    }
+    .icon-text {
+        float: left;
+        padding: 3px;
+    }
+    .recommend-footprints .title {
+        background-color: #98C94A;
+        color: white;
+        font-weight: bold;
+        padding: 3px;
+        text-align: center;
+        font-size: 1.2em;
+    }
+    .recommend-footprints .footprint {
+        width: 100%;
+    }
+    .client-android, .client-iphone, .trip-recommend {
+        float: left;
+        margin-left: 5px;
+    }
+</style>
+<script>
+    $(function() {
+        var sortType = $(".trip-sort-types");
+        $(".trip-sort-types").change(function() {
+            window.location.href = "/search/trip/all/2/all/" + $(".trip-sort-types option:selected").attr("value") + "/descent/?keyword=";
+        });
+    }); 
+</script>
+<div class="left clear-left" style="margin: 5px 0;">
+    <form method="get" action="/search/trip/all/2/all/occurtime/descent/">
+        <h2 class="search-title"><font style="color: #369; font-size: 15px;">关键字：</font></h2>
+        <label>
+            <input maxlength="20" class="search-text" type="text" name="keyword" value="">
+            </input></label>
+        <input type="submit" class="search-button" value="搜&nbsp;索" />
+    </form>
+</div>
+<div class="clear-left"></div>
+<div class="left">
+    
+    
+    <a class="search-tag" href="/search/trip/all/1/all/occurtime/descent/?keyword="> <span> 北京 </span> <span class="search-tag-close"> <font color="red"> X </font> </span> </a>
+    
+    
+</div>
+<div class="listSection">
+    <ul class="tripsList">
+        <li class="title">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                
+                <tr>
+                    <td class="search-sort-type"><!--
+                    <a href="/search/trip/all/2/recommend/occurtime/descent/?keyword=" > 显示推荐行程 </a><a href="/search/trip/all/2/all/occurtime/descent/?keyword="  class="current"> 显示全部行程 </a><a href="/search/trip/all/2/with_pics/occurtime/ascent/?keyword=" > 显示带图片行程 </a>
+                    --><label onclick='window.location.href="/search/trip/all/2/recommend/occurtime/descent/?keyword="'>
+                        <input type="checkbox"  />
+                        显示推荐行程</label> &nbsp;&nbsp;&nbsp;&nbsp; <label onclick='window.location.href="/search/trip/all/2/with_pics/occurtime/descent/?keyword="'>
+                        <input type="checkbox"  />
+                        显示带图片行程</label></td>
+                    <td width="160"><label>排序：</label>
+                    <select class="trip-sort-types">
+                        <option  value="default">默认排序</option>
+                        <option  value="view_times">按浏览次数</option>
+                        <option  value="comment_times">按评论次数</option>
+                        <option  value="downloads">按下载次数</option>
+                        <option  value="favorites">按收藏次数</option>
+                        <option  value="create_time">按上传时间</option>
+                        <option selected value="occurtime">按出行时间</option>
+                    </select><!--
+                    <span > <a href="/search/trip/all/2/all/time/descent/?keyword="><img src="/static/images/sort_logo_none_20.jpg" class="img-down-5px"></img> 创建时间</a> </span>
+                    --></td>
+                    <td width="240"><a class="worldMapIcon right" href="/map/" style="position:relative;margin:0px;padding:0px;"></a></td>
+                </tr>
+            </table>
+        </li>
+        
+        
+        
+        <li>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td colspan="2">
+                    <div>
+                        <dl>
+                            <dt>
+                                <h4>
+                                <p class="trip-title">
+                                    <a target="_blank" href="/trip/808189/">石城镇-前廊坊峪-云蒙山-七道沟 </a>
+                                </p></h4>
+                            </dt>
+                            <dd>
+                            <a title="唐山燕赵户外" href="/userindex/167974/"> 唐山燕赵户外</a>
+                                
+                                &nbsp;2015-12-8上传&nbsp;<a href="/search/trip/mountaineering/1/recommend/time/descent/">登山</a>&nbsp;20公里&nbsp;难度：简单
+                            </dd>
+                            <dd>
+                                于&nbsp;2106-02-07 14:28&nbsp;出发
+                            </dd>
+                            <dd>
+                                北京 密云县&nbsp;-&nbsp;北京 怀柔区
+                            </dd>
+                        </dl>
+                    </div></td>
+                    <!--
+                    <td width="130"> 2015-12-8 </td>
+                    2106-2-7
+                    -->
+                    <td width="280">
+                    <div class="thumbs">
+                        
+                    </div></td>
+                </tr>
+                <tr>
+                    <td>
+                    
+                     </td>
+                    <td width="100">
+                    <div class="stars-background">
+                        <script>
+                            document.write('<div class="stars-yellow" style="width: ' + ((parseInt(0)||0) * 16) + 'px"></div>');
+                        </script>
+                    </div></td>
+                    <td>
+                    <div class="trip-icon-summaries">
+                        <table width="100%">
+                            <tr>
+                                <td width="26%"><i class="icon-trip-views" title="浏览次数"></i>
+                                <p class="icon-text">
+                                    66
+                                </p></td>
+                                <td width="26%"><i class="icon-trip-comments" title="评论次数"></i>
+                                <p class="icon-text">
+                                    1
+                                </p></td>
+                                <td width="26%"><i class="icon-trip-downloads" title="下载次数"></i>
+                                <p class="icon-text">
+                                    3
+                                </p></td>
+                                <td width="21%"><i class="icon-trip-favorite" title="被收藏次数"></i>
+                                <p class="icon-text">
+                                    3
+                                </p></td>
+                            </tr>
+                        </table>
+                    </div></td>
+                </tr>
+            </table>
+            
+            
+        </li>
+        
+        <li>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td colspan="2">
+                    <div>
+                        <dl>
+                            <dt>
+                                <h4>
+                                <p class="trip-title">
+                                    <a target="_blank" href="/trip/808209/">云蒙山—天仙瀑-豪宅 </a>
+                                </p></h4>
+                            </dt>
+                            <dd>
+                            <a title="唐山燕赵户外" href="/userindex/167974/"> 唐山燕赵户外</a>
+                                
+                                &nbsp;2015-12-8上传&nbsp;<a href="/search/trip/mountaineering/1/recommend/time/descent/">登山</a>&nbsp;7公里&nbsp;难度：简单
+                            </dd>
+                            <dd>
+                                于&nbsp;2106-02-07 14:28&nbsp;出发
+                            </dd>
+                            <dd>
+                                北京 密云县&nbsp;-&nbsp;北京 密云县
+                            </dd>
+                        </dl>
+                    </div></td>
+                    <!--
+                    <td width="130"> 2015-12-8 </td>
+                    2106-2-7
+                    -->
+                    <td width="280">
+                    <div class="thumbs">
+                        
+                    </div></td>
+                </tr>
+                <tr>
+                    <td>
+                    
+                     </td>
+                    <td width="100">
+                    <div class="stars-background">
+                        <script>
+                            document.write('<div class="stars-yellow" style="width: ' + ((parseInt(0)||0) * 16) + 'px"></div>');
+                        </script>
+                    </div></td>
+                    <td>
+                    <div class="trip-icon-summaries">
+                        <table width="100%">
+                            <tr>
+                                <td width="26%"><i class="icon-trip-views" title="浏览次数"></i>
+                                <p class="icon-text">
+                                    33
+                                </p></td>
+                                <td width="26%"><i class="icon-trip-comments" title="评论次数"></i>
+                                <p class="icon-text">
+                                    0
+                                </p></td>
+                                <td width="26%"><i class="icon-trip-downloads" title="下载次数"></i>
+                                <p class="icon-text">
+                                    0
+                                </p></td>
+                                <td width="21%"><i class="icon-trip-favorite" title="被收藏次数"></i>
+                                <p class="icon-text">
+                                    2
+                                </p></td>
+                            </tr>
+                        </table>
+                    </div></td>
+                </tr>
+            </table>
+            
+            
+        </li>
+        
+        <li>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td colspan="2">
+                    <div>
+                        <dl>
+                            <dt>
+                                <h4>
+                                <p class="trip-title">
+                                    <a target="_blank" href="/trip/753443/">周六 </a>
+                                </p></h4>
+                            </dt>
+                            <dd>
+                            <a title="han4n" href="/userindex/206212/"> han4n</a>
+                                
+                                &nbsp;2015-8-5上传&nbsp;<a href="/search/trip/other/1/recommend/time/descent/">其他</a>&nbsp;94公里&nbsp;难度：简单
+                            </dd>
+                            <dd>
+                                于&nbsp;2035-03-17 09:13&nbsp;出发,历时&nbsp;9 小时, 38 分钟
+                            </dd>
+                            <dd>
+                                北京 北京市区&nbsp;-&nbsp;北京 北京市区
+                            </dd>
+                        </dl>
+                    </div></td>
+                    <!--
+                    <td width="130"> 2015-8-5 </td>
+                    2035-3-17
+                    -->
+                    <td width="280">
+                    <div class="thumbs">
+                        
+                        <div class="photoItem left tripPhotoItem">
+                            <div class="photoWraper">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="center"><a target="_blank" href="/footprint/3430869/"> <img title="门口收废品的，天天下像棋。" alt="门口收废品的，天天下像棋。" class="photo" src="http://www.foooooot.com/media/upload/footprint/2015/08/05/thumbnail.1438753517051.jpg"/> </a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <div class="photoItem left tripPhotoItem">
+                            <div class="photoWraper">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="center"><a target="_blank" href="/footprint/3430868/"> <img title="好像还有人住" alt="好像还有人住" class="photo" src="http://www.foooooot.com/media/upload/footprint/2015/08/05/thumbnail.1438753499487.jpg"/> </a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <div class="photoItem left tripPhotoItem">
+                            <div class="photoWraper">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="center"><a target="_blank" href="/footprint/3430867/"> <img title="不知道为什么拆不下去了。" alt="不知道为什么拆不下去了。" class="photo" src="http://www.foooooot.com/media/upload/footprint/2015/08/05/thumbnail.1438753475273.jpg"/> </a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                    </div></td>
+                </tr>
+                <tr>
+                    <td>
+                    
+                     </td>
+                    <td width="100">
+                    <div class="stars-background">
+                        <script>
+                            document.write('<div class="stars-yellow" style="width: ' + ((parseInt(0)||0) * 16) + 'px"></div>');
+                        </script>
+                    </div></td>
+                    <td>
+                    <div class="trip-icon-summaries">
+                        <table width="100%">
+                            <tr>
+                                <td width="26%"><i class="icon-trip-views" title="浏览次数"></i>
+                                <p class="icon-text">
+                                    22
+                                </p></td>
+                                <td width="26%"><i class="icon-trip-comments" title="评论次数"></i>
+                                <p class="icon-text">
+                                    1
+                                </p></td>
+                                <td width="26%"><i class="icon-trip-downloads" title="下载次数"></i>
+                                <p class="icon-text">
+                                    0
+                                </p></td>
+                                <td width="21%"><i class="icon-trip-favorite" title="被收藏次数"></i>
+                                <p class="icon-text">
+                                    0
+                                </p></td>
+                            </tr>
+                        </table>
+                    </div></td>
+                </tr>
+            </table>
+            
+            
+        </li>
+        
+        <li>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td colspan="2">
+                    <div>
+                        <dl>
+                            <dt>
+                                <h4>
+                                <p class="trip-title">
+                                    <a target="_blank" href="/trip/294804/">蜡千山-后石堂 </a>
+                                </p></h4>
+                            </dt>
+                            <dd>
+                            <a title="今朝" href="/userindex/16040/"> 今朝</a>
+                                
+                                &nbsp;2014-11-28上传&nbsp;<a href="/search/trip/mountaineering/1/recommend/time/descent/">登山</a>&nbsp;10公里&nbsp;难度：简单
+                            </dd>
+                            <dd>
+                                于&nbsp;2016-12-04 09:27&nbsp;出发
+                            </dd>
+                            <dd>
+                                北京 房山区&nbsp;-&nbsp;北京 房山区
+                            </dd>
+                        </dl>
+                    </div></td>
+                    <!--
+                    <td width="130"> 2014-11-28 </td>
+                    2016-12-4
+                    -->
+                    <td width="280">
+                    <div class="thumbs">
+                        
+                    </div></td>
+                </tr>
+                <tr>
+                    <td>
+                    
+                     </td>
+                    <td width="100">
+                    <div class="stars-background">
+                        <script>
+                            document.write('<div class="stars-yellow" style="width: ' + ((parseInt(0)||0) * 16) + 'px"></div>');
+                        </script>
+                    </div></td>
+                    <td>
+                    <div class="trip-icon-summaries">
+                        <table width="100%">
+                            <tr>
+                                <td width="26%"><i class="icon-trip-views" title="浏览次数"></i>
+                                <p class="icon-text">
+                                    106
+                                </p></td>
+                                <td width="26%"><i class="icon-trip-comments" title="评论次数"></i>
+                                <p class="icon-text">
+                                    3
+                                </p></td>
+                                <td width="26%"><i class="icon-trip-downloads" title="下载次数"></i>
+                                <p class="icon-text">
+                                    1
+                                </p></td>
+                                <td width="21%"><i class="icon-trip-favorite" title="被收藏次数"></i>
+                                <p class="icon-text">
+                                    2
+                                </p></td>
+                            </tr>
+                        </table>
+                    </div></td>
+                </tr>
+            </table>
+            
+            
+        </li>
+        
+        <li>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td colspan="2">
+                    <div>
+                        <dl>
+                            <dt>
+                                <h4>
+                                <p class="trip-title">
+                                    <a target="_blank" href="/trip/897500/">善行者2016年100km </a>
+                                </p></h4>
+                            </dt>
+                            <dd>
+                            <a title="maolin" href="/userindex/570092/"> maolin</a>
+                                
+                                &nbsp;2016-5-5上传&nbsp;<a href="/search/trip/hiking/1/recommend/time/descent/">徒步</a>&nbsp;101公里&nbsp;难度：专家级
+                            </dd>
+                            <dd>
+                                于&nbsp;2016-09-10 08:00&nbsp;出发,历时&nbsp;1 年, 10 月
+                            </dd>
+                            <dd>
+                                北京 昌平区&nbsp;-&nbsp;北京 昌平区
+                            </dd>
+                        </dl>
+                    </div></td>
+                    <!--
+                    <td width="130"> 2016-5-5 </td>
+                    2016-9-10
+                    -->
+                    <td width="280">
+                    <div class="thumbs">
+                        
+                    </div></td>
+                </tr>
+                <tr>
+                    <td>
+                    
+                     <a target="_blank" class="client-iphone" title="该行程使用iPhone客户端记录" href="http://www.foooooot.com/page/app/iPhone.html"></a>  </td>
+                    <td width="100">
+                    <div class="stars-background">
+                        <script>
+                            document.write('<div class="stars-yellow" style="width: ' + ((parseInt(5)||0) * 16) + 'px"></div>');
+                        </script>
+                    </div></td>
+                    <td>
+                    <div class="trip-icon-summaries">
+                        <table width="100%">
+                            <tr>
+                                <td width="26%"><i class="icon-trip-views" title="浏览次数"></i>
+                                <p class="icon-text">
+                                    27
+                                </p></td>
+                                <td width="26%"><i class="icon-trip-comments" title="评论次数"></i>
+                                <p class="icon-text">
+                                    0
+                                </p></td>
+                                <td width="26%"><i class="icon-trip-downloads" title="下载次数"></i>
+                                <p class="icon-text">
+                                    0
+                                </p></td>
+                                <td width="21%"><i class="icon-trip-favorite" title="被收藏次数"></i>
+                                <p class="icon-text">
+                                    1
+                                </p></td>
+                            </tr>
+                        </table>
+                    </div></td>
+                </tr>
+            </table>
+            
+            
+        </li>
+        
+        <li>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td colspan="2">
+                    <div>
+                        <dl>
+                            <dt>
+                                <h4>
+                                <p class="trip-title">
+                                    <a target="_blank" href="/trip/897764/">2016善行者100km路线图 </a>
+                                </p></h4>
+                            </dt>
+                            <dd>
+                            <a title="maolin" href="/userindex/570092/"> maolin</a>
+                                
+                                &nbsp;2016-5-5上传&nbsp;<a href="/search/trip/hiking/1/recommend/time/descent/">徒步</a>&nbsp;101公里&nbsp;难度：专家级
+                            </dd>
+                            <dd>
+                                于&nbsp;2016-09-10 06:16&nbsp;出发,历时&nbsp;1 年, 10 月
+                            </dd>
+                            <dd>
+                                北京 昌平区&nbsp;-&nbsp;北京 昌平区
+                            </dd>
+                        </dl>
+                    </div></td>
+                    <!--
+                    <td width="130"> 2016-5-5 </td>
+                    2016-9-10
+                    -->
+                    <td width="280">
+                    <div class="thumbs">
+                        
+                    </div></td>
+                </tr>
+                <tr>
+                    <td>
+                     <a target="_blank" class="client-android" title="该行程使用安卓客户端记录" href="http://www.foooooot.com/page/app/Android.html"></a> 
+                     </td>
+                    <td width="100">
+                    <div class="stars-background">
+                        <script>
+                            document.write('<div class="stars-yellow" style="width: ' + ((parseInt(0)||0) * 16) + 'px"></div>');
+                        </script>
+                    </div></td>
+                    <td>
+                    <div class="trip-icon-summaries">
+                        <table width="100%">
+                            <tr>
+                                <td width="26%"><i class="icon-trip-views" title="浏览次数"></i>
+                                <p class="icon-text">
+                                    16
+                                </p></td>
+                                <td width="26%"><i class="icon-trip-comments" title="评论次数"></i>
+                                <p class="icon-text">
+                                    0
+                                </p></td>
+                                <td width="26%"><i class="icon-trip-downloads" title="下载次数"></i>
+                                <p class="icon-text">
+                                    0
+                                </p></td>
+                                <td width="21%"><i class="icon-trip-favorite" title="被收藏次数"></i>
+                                <p class="icon-text">
+                                    1
+                                </p></td>
+                            </tr>
+                        </table>
+                    </div></td>
+                </tr>
+            </table>
+            
+            
+        </li>
+        
+        <li>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td colspan="2">
+                    <div>
+                        <dl>
+                            <dt>
+                                <h4>
+                                <p class="trip-title">
+                                    <a target="_blank" href="/trip/929211/">箭扣 </a>
+                                </p></h4>
+                            </dt>
+                            <dd>
+                            <a title="毛豆先生" href="/userindex/479571/"> 毛豆先生</a>
+                                
+                                &nbsp;2016-6-15上传&nbsp;<a href="/search/trip/mountaineering/1/recommend/time/descent/">登山</a>&nbsp;22公里&nbsp;难度：难
+                            </dd>
+                            <dd>
+                                于&nbsp;2016-06-25 13:37&nbsp;出发
+                            </dd>
+                            <dd>
+                                北京 怀柔区&nbsp;-&nbsp;北京 怀柔区
+                            </dd>
+                        </dl>
+                    </div></td>
+                    <!--
+                    <td width="130"> 2016-6-15 </td>
+                    2016-6-25
+                    -->
+                    <td width="280">
+                    <div class="thumbs">
+                        
+                    </div></td>
+                </tr>
+                <tr>
+                    <td>
+                    
+                     </td>
+                    <td width="100">
+                    <div class="stars-background">
+                        <script>
+                            document.write('<div class="stars-yellow" style="width: ' + ((parseInt(0)||0) * 16) + 'px"></div>');
+                        </script>
+                    </div></td>
+                    <td>
+                    <div class="trip-icon-summaries">
+                        <table width="100%">
+                            <tr>
+                                <td width="26%"><i class="icon-trip-views" title="浏览次数"></i>
+                                <p class="icon-text">
+                                    14
+                                </p></td>
+                                <td width="26%"><i class="icon-trip-comments" title="评论次数"></i>
+                                <p class="icon-text">
+                                    0
+                                </p></td>
+                                <td width="26%"><i class="icon-trip-downloads" title="下载次数"></i>
+                                <p class="icon-text">
+                                    0
+                                </p></td>
+                                <td width="21%"><i class="icon-trip-favorite" title="被收藏次数"></i>
+                                <p class="icon-text">
+                                    1
+                                </p></td>
+                            </tr>
+                        </table>
+                    </div></td>
+                </tr>
+            </table>
+            
+            
+        </li>
+        
+        <li>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td colspan="2">
+                    <div>
+                        <dl>
+                            <dt>
+                                <h4>
+                                <p class="trip-title">
+                                    <a target="_blank" href="/trip/933354/">1 </a>
+                                </p></h4>
+                            </dt>
+                            <dd>
+                            <a title="Sunshengchun" href="/userindex/590351/"> Sunshengchun</a>
+                                
+                                &nbsp;2016-6-20上传&nbsp;<a href="/search/trip/hiking/1/recommend/time/descent/">徒步</a>&nbsp;4公里&nbsp;难度：简单
+                            </dd>
+                            <dd>
+                                于&nbsp;2016-06-20 20:28&nbsp;出发,历时&nbsp;59 分钟
+                            </dd>
+                            <dd>
+                                北京 大兴区&nbsp;-&nbsp;北京 大兴区
+                            </dd>
+                        </dl>
+                    </div></td>
+                    <!--
+                    <td width="130"> 2016-6-20 </td>
+                    2016-6-20
+                    -->
+                    <td width="280">
+                    <div class="thumbs">
+                        
+                    </div></td>
+                </tr>
+                <tr>
+                    <td>
+                     <a target="_blank" class="client-android" title="该行程使用安卓客户端记录" href="http://www.foooooot.com/page/app/Android.html"></a> 
+                     </td>
+                    <td width="100">
+                    <div class="stars-background">
+                        <script>
+                            document.write('<div class="stars-yellow" style="width: ' + ((parseInt(0)||0) * 16) + 'px"></div>');
+                        </script>
+                    </div></td>
+                    <td>
+                    <div class="trip-icon-summaries">
+                        <table width="100%">
+                            <tr>
+                                <td width="26%"><i class="icon-trip-views" title="浏览次数"></i>
+                                <p class="icon-text">
+                                    0
+                                </p></td>
+                                <td width="26%"><i class="icon-trip-comments" title="评论次数"></i>
+                                <p class="icon-text">
+                                    0
+                                </p></td>
+                                <td width="26%"><i class="icon-trip-downloads" title="下载次数"></i>
+                                <p class="icon-text">
+                                    0
+                                </p></td>
+                                <td width="21%"><i class="icon-trip-favorite" title="被收藏次数"></i>
+                                <p class="icon-text">
+                                    0
+                                </p></td>
+                            </tr>
+                        </table>
+                    </div></td>
+                </tr>
+            </table>
+            
+            
+        </li>
+        
+        <li>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td colspan="2">
+                    <div>
+                        <dl>
+                            <dt>
+                                <h4>
+                                <p class="trip-title">
+                                    <a target="_blank" href="/trip/933323/">6.20 </a>
+                                </p></h4>
+                            </dt>
+                            <dd>
+                            <a title="sf_kmwxdlnb" href="/userindex/531567/"> sf_kmwxdlnb</a>
+                                
+                                &nbsp;2016-6-20上传&nbsp;<a href="/search/trip/hiking/1/recommend/time/descent/">徒步</a>&nbsp;5公里&nbsp;难度：一般
+                            </dd>
+                            <dd>
+                                于&nbsp;2016-06-20 19:54&nbsp;出发,历时&nbsp;56 分钟
+                            </dd>
+                            <dd>
+                                北京 北京市区&nbsp;-&nbsp;北京 北京市区
+                            </dd>
+                        </dl>
+                    </div></td>
+                    <!--
+                    <td width="130"> 2016-6-20 </td>
+                    2016-6-20
+                    -->
+                    <td width="280">
+                    <div class="thumbs">
+                        
+                    </div></td>
+                </tr>
+                <tr>
+                    <td>
+                     <a target="_blank" class="client-android" title="该行程使用安卓客户端记录" href="http://www.foooooot.com/page/app/Android.html"></a> 
+                     </td>
+                    <td width="100">
+                    <div class="stars-background">
+                        <script>
+                            document.write('<div class="stars-yellow" style="width: ' + ((parseInt(0)||0) * 16) + 'px"></div>');
+                        </script>
+                    </div></td>
+                    <td>
+                    <div class="trip-icon-summaries">
+                        <table width="100%">
+                            <tr>
+                                <td width="26%"><i class="icon-trip-views" title="浏览次数"></i>
+                                <p class="icon-text">
+                                    0
+                                </p></td>
+                                <td width="26%"><i class="icon-trip-comments" title="评论次数"></i>
+                                <p class="icon-text">
+                                    0
+                                </p></td>
+                                <td width="26%"><i class="icon-trip-downloads" title="下载次数"></i>
+                                <p class="icon-text">
+                                    0
+                                </p></td>
+                                <td width="21%"><i class="icon-trip-favorite" title="被收藏次数"></i>
+                                <p class="icon-text">
+                                    0
+                                </p></td>
+                            </tr>
+                        </table>
+                    </div></td>
+                </tr>
+            </table>
+            
+            
+        </li>
+        
+        <li>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td colspan="2">
+                    <div>
+                        <dl>
+                            <dt>
+                                <h4>
+                                <p class="trip-title">
+                                    <a target="_blank" href="/trip/933343/">晚上遛弯 </a>
+                                </p></h4>
+                            </dt>
+                            <dd>
+                            <a title="宇君" href="/userindex/207919/"> 宇君</a>
+                                
+                                &nbsp;2016-6-20上传&nbsp;<a href="/search/trip/hiking/1/recommend/time/descent/">徒步</a>&nbsp;7公里&nbsp;难度：简单
+                            </dd>
+                            <dd>
+                                于&nbsp;2016-06-20 19:52&nbsp;出发,历时&nbsp;1 小时, 26 分钟
+                            </dd>
+                            <dd>
+                                北京 北京市区&nbsp;-&nbsp;北京 北京市区
+                            </dd>
+                        </dl>
+                    </div></td>
+                    <!--
+                    <td width="130"> 2016-6-20 </td>
+                    2016-6-20
+                    -->
+                    <td width="280">
+                    <div class="thumbs">
+                        
+                    </div></td>
+                </tr>
+                <tr>
+                    <td>
+                     <a target="_blank" class="client-android" title="该行程使用安卓客户端记录" href="http://www.foooooot.com/page/app/Android.html"></a> 
+                     </td>
+                    <td width="100">
+                    <div class="stars-background">
+                        <script>
+                            document.write('<div class="stars-yellow" style="width: ' + ((parseInt(0)||0) * 16) + 'px"></div>');
+                        </script>
+                    </div></td>
+                    <td>
+                    <div class="trip-icon-summaries">
+                        <table width="100%">
+                            <tr>
+                                <td width="26%"><i class="icon-trip-views" title="浏览次数"></i>
+                                <p class="icon-text">
+                                    0
+                                </p></td>
+                                <td width="26%"><i class="icon-trip-comments" title="评论次数"></i>
+                                <p class="icon-text">
+                                    0
+                                </p></td>
+                                <td width="26%"><i class="icon-trip-downloads" title="下载次数"></i>
+                                <p class="icon-text">
+                                    0
+                                </p></td>
+                                <td width="21%"><i class="icon-trip-favorite" title="被收藏次数"></i>
+                                <p class="icon-text">
+                                    0
+                                </p></td>
+                            </tr>
+                        </table>
+                    </div></td>
+                </tr>
+            </table>
+            
+            
+        </li>
+        
+        <li>
+            <div class="pageNum">
+                
+                <div id="pagination" class="pagination">
+                    
+                        <a href="?page=1&amp;keyword=" class="prev">&lsaquo;&lsaquo; 上一页</a>
+                    
+                    
+                        
+                            
+                                <a href="?page=1&amp;keyword=" class="page">1</a>
+                            
+                        
+                    
+                        
+                            
+                                <a class="current page">2</a>
+                            
+                        
+                    
+                        
+                            
+                                <a href="?page=3&amp;keyword=" class="page">3</a>
+                            
+                        
+                    
+                        
+                            
+                                <a href="?page=4&amp;keyword=" class="page">4</a>
+                            
+                        
+                    
+                        
+                            
+                                <a href="?page=5&amp;keyword=" class="page">5</a>
+                            
+                        
+                    
+                        
+                            ...
+                        
+                    
+                        
+                            
+                                <a href="?page=22289&amp;keyword=" class="page">22289</a>
+                            
+                        
+                    
+                        
+                            
+                                <a href="?page=22290&amp;keyword=" class="page">22290</a>
+                            
+                        
+                    
+                        
+                            
+                                <a href="?page=22291&amp;keyword=" class="page">22291</a>
+                            
+                        
+                    
+                    
+                        <a href="?page=3&amp;keyword=" class="next">下一页 &rsaquo;&rsaquo;</a>
+                    
+                    &nbsp;
+                    <form action="" method="get"><div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='ea4e27e2c052649c1bd58838790bcca0' /></div>
+                        跳至
+                        <input name="page" size="3"/>页
+                        
+                        <input name="keyword" type="hidden" value=""/>
+                        
+                    </form>
+                </div>
+                
+            </div>
+        </li>
+    </ul>
+    <div class="cleanFix"></div>
+</div>
+
+
+    </div>
+</div>
+
+
+
+        <div class="clear"></div>
+        <br />
+        
+
+
+
+<div id="footer">
+    <ul class="fnav">
+        <li>
+            <a target="_blank" href="http://www.foooooot.com/page/about/guan_yu_wo_men.html">关于我们</a>
+        </li>
+        <li>
+            <a target="_blank" href="http://www.foooooot.com/page/about/jia_ru_wo_men.html">加入我们</a>
+        </li>
+        <li>
+            <a target="_blank" href="http://www.foooooot.com/page/about/liu_zhi_jiao_wen_hua/liu_zhi_jiao_wen_hua.html">六只脚文化</a>
+        </li>
+        <li>
+            <a target="_blank" href="http://www.foooooot.com/page/about/lian_xi_wo_men.html">联系我们</a>
+        </li>
+        <li>
+            <a target="_blank" href="http://www.foooooot.com/page/about/gong_neng_gai_shu.html">功能概述</a>
+        </li>
+        <li>
+            <a target="_blank" href="http://www.foooooot.com/page/about/fu_wu_tiao_kuan.html">服务条款</a>
+        </li>
+        <li>
+            <a target="_blank" href="http://www.foooooot.com/page/about/chang_jian_wen_ti.html">常见问题</a>
+        </li>
+        <li>
+            <a target="_blank" href="http://www.foooooot.com/page/about/te_bie_gan_xie.html">特别感谢</a>
+        </li>
+    </ul>
+    <div class="clear"></div>
+    <div class="copyright">
+        <a href="http://www.miibeian.gov.cn/"><font style="color: #bbb">京ICP备09050704号</font></a>
+        Copyright &copy;
+        <a href="/"><em><font style="color:#639805">foooooot.com</font></em></a>
+        all rights reserved.
+    </div>
+</div>
+
+
+        
+    </div>
+    
+    
+    
+
+
+
+<a href="http://bbs.lvye.cn/thread-773546-1-1.html" target="_blank" style="text-decoration: none; corsor: pointer;">
+  <div class="feedback" style="position: fixed; _position: absolute; right: 0; bottom: 40px; top: 70%; width: 35px; height: 105px;background-image: url(/static/feedback/images/btn_feedback.png); background-repeat: no-repeat;"></div>
+</a>
+
+
+
+        <div style="display:none;"></div>
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?67c2c2315527028d2b037050adedf0cd";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+        
+        
+<script type="text/javascript">
+    function openUserChanel(){
+        $(this).find("ul").show();
+    }
+    function closeUserChanel() {
+        $(this).find("ul").hide();
+    }
+    $(function() {
+        $(".user-channel").bind('mouseover', openUserChanel);
+        $(".user-channel").bind('mouseout', closeUserChanel);
+        // $(document).bind("click", closeUserChanel);
+    });
+    function openNavSubMenu() {
+        $(this).find(".navbar-items").show();
+    }
+    function closeNavSubMenu() {
+        $(this).find(".navbar-items").hide();
+    }
+    $(function() {
+        $("#navbar > span").bind('mouseover', openNavSubMenu);
+        $("#navbar > span").bind('mouseout', closeNavSubMenu);
+        // $(document).bind("click", closeNavSubMenu);
+    });
+</script>
+
+
+        
+
+
+
+    </body>
+</html>
