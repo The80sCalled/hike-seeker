@@ -33,11 +33,13 @@ class SixFeetDownloader:
 
             trip_title = s.xpath('.//p[@class="trip-title"]/a[1]/text()')[0].strip()
 
+            trip_type = s.xpath('./dd[1]/a[2]/text()')[0].strip()
+
             start_time_text = s.xpath('./dd[2]/text()')[0].strip()
             start_time_text = re.search("([-:\d\s]{8,20})", start_time_text).group(1).strip()
             trip_start_time = datetime.datetime.strptime(start_time_text, "%Y-%m-%d %H:%M")
 
-            infos.append(TripInfo(trip_id, trip_title, trip_start_time))
+            infos.append(TripInfo(trip_id, trip_title, trip_type, trip_start_time))
 
         return infos
 
@@ -73,9 +75,10 @@ class SixFeetDownloader:
 
 
 class TripInfo:
-    def __init__(self, id, title, hike_date):
+    def __init__(self, id, title, type, hike_date):
         self.id = id
         self.title = title
+        self.type = type
         self.hike_date = hike_date
         self.track = []
 
@@ -111,6 +114,7 @@ class UnitTests(unittest.TestCase):
 
         self.assertEqual("672456", trips[0].id)
         self.assertEqual("22公里测试", trips[0].title)
+        self.assertEqual("徒步", trips[0].type)
 
         self.assertEqual("748475", trips[1].id)
         self.assertEqual("大觉寺 萝卜地 妙峰山 阳台山 凤凰岭 白虎涧", trips[1].title)
@@ -131,7 +135,7 @@ class UnitTests(unittest.TestCase):
 
         me = SixFeetDownloader(self.dl, self.dl)
 
-        fake_trip = TripInfo("931702", "20160618八大处-植物园", datetime.datetime(2016, 6, 18, 8, 53))
+        fake_trip = TripInfo("931702", "20160618八大处-植物园", "登山", datetime.datetime(2016, 6, 18, 8, 53))
 
         track_points = me.get_track_json(fake_trip)
 

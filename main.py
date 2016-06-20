@@ -45,8 +45,12 @@ if __name__ == "__main__":
     INCLUDE_PAGE_RANGE = range(1, 2)
 
     trips = _download_tons_of_trips(config, INCLUDE_PAGE_RANGE, use_delay=False)
+    original_trips_len = len(trips)
 
-    logging.info("Downloaded tracks for %s trips" % len(trips))
+    skip = {"748475"}
+    activity_types = {"登山", "徒步"}
+    trips = [t for t in trips if t.id not in skip and t.type in activity_types]
+    logging.info("Loaded {0} trips, {1} meet filter criteria".format(original_trips_len, len(trips)))
 
     os.makedirs(config['kml_output_folder'], exist_ok=True)
     tripvis.visualize_trips(trips, os.path.join(config['kml_output_folder'], "BeijingHikes.kml"))

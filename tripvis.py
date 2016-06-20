@@ -35,9 +35,6 @@ def visualize_trips(trips, kml_file):
         )
     )
 
-    skip = {"748475"}
-
-    trips = [t for t in trips if t.id not in skip]
     for trip in trips:
         kml_doc.append(
             _placemark_from_trip_and_track(trip)
