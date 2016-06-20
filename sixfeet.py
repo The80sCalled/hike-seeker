@@ -12,6 +12,7 @@ class SixFeetDownloader:
 
     # The '2' means Beijing
     _TRIP_LISTING_URL = "/search/trip/all/2/all/occurtime/descent/?page={0}&keyword="
+    _TRACK_JSON_URL = "/trip/{0}/offsettrackjson/"
 
     def __init__(self, trip_downloader, track_downloader):
         self.trip_downloader = trip_downloader
@@ -84,6 +85,20 @@ class SixFeetDownloader:
 
         return trip_info
 
+    def get_track_json(self, trip_info):
+        """Downloads the JSON for the GPS track"""
+        import json
+
+        url = SixFeetDownloader._FOOT_BASE_URL + SixFeetDownloader._TRACK_JSON_URL.format(trip_info.id)
+        points_json = json.loads(self.track_downloader.download(url))
+
+        points = []
+
+        for p in points_json:
+            points.append(GpsTrackPoint(p[0], p[1], p[2], p[3], p[4], p[5]))
+
+        return points
+
 
 class TripInfo:
     def __init__(self, id, title, hike_date):
@@ -92,12 +107,22 @@ class TripInfo:
         self.hike_date = hike_date
 
 
+class GpsTrackPoint:
+    def __init__(self, timestamp, latitude, longitude, altitude, speed, cumulative_distance):
+        self.timestamp = timestamp
+        self.latitude = latitude
+        self.longitude = longitude
+        self.altitude = altitude
+        self.speed = speed
+        self.cumulative_distance = cumulative_distance
+
+
 class UnitTests(unittest.TestCase):
-    _TEMP_SENTENCE_CACHE_FOLDER = os.path.expandvars("$Temp\\sixfeet_py_unittest_cache")
+    _TEMP_CACHE_FOLDER = os.path.expandvars("$Temp\\sixfeet_py_unittest_cache")
 
     def setUp(self):
-        osutils.clear_dir(UnitTests._TEMP_SENTENCE_CACHE_FOLDER)
-        shutil.copytree("unittest\\test-data", UnitTests._TEMP_SENTENCE_CACHE_FOLDER, True)
+        osutils.clear_dir(UnitTests._TEMP_CACHE_FOLDER)
+        shutil.copytree("unittest\\test-data", UnitTests._TEMP_CACHE_FOLDER, True)
 
     def tearDown(self):
         pass
@@ -105,8 +130,8 @@ class UnitTests(unittest.TestCase):
     def test_track_list(self):
         import datetime
 
-        me = SixFeetDownloader(cacheddownloader.CachedDownloader(UnitTests._TEMP_SENTENCE_CACHE_FOLDER, True),
-                               cacheddownloader.CachedDownloader(UnitTests._TEMP_SENTENCE_CACHE_FOLDER, True))
+        me = SixFeetDownloader(cacheddownloader.CachedDownloader(UnitTests._TEMP_CACHE_FOLDER, True),
+                               cacheddownloader.CachedDownloader(UnitTests._TEMP_CACHE_FOLDER, True))
 
         trips = me.get_beijing_trip_info(1)
         self.assertEqual(10, len(trips))
@@ -118,6 +143,25 @@ class UnitTests(unittest.TestCase):
         self.assertEqual("大觉寺 萝卜地 妙峰山 阳台山 凤凰岭 白虎涧", trips[1].title)
 
         self.assertEqual(datetime.datetime(2106, 2, 7, 14, 28), trips[2].hike_date)
+
+    def test_track_points(self):
+        import datetime
+
+        me = SixFeetDownloader(cacheddownloader.CachedDownloader(UnitTests._TEMP_CACHE_FOLDER, True),
+                               cacheddownloader.CachedDownloader(UnitTests._TEMP_CACHE_FOLDER, True))
+
+        fake_trip = TripInfo("931702", "20160618八大处-植物园", datetime.datetime(2016, 6, 18, 8, 53))
+
+        track_points = me.get_track_json(fake_trip)
+
+        self.assertEqual(835, len(track_points))
+        self.assertEqual("1466211222", track_points[1].timestamp)
+        self.assertEqual(39.948115, track_points[1].latitude)
+        self.assertEqual(116.18917, track_points[1].longitude)
+        self.assertEqual(88.0, track_points[1].altitude)
+        self.assertEqual(4.5, track_points[1].speed)
+        self.assertEqual(0.02332, track_points[1].cumulative_distance)
+
 
 # class UnitTests(unittest.TestCase):
 #     _TEMP_SENTENCE_CACHE_FOLDER = os.path.expandvars("$Temp\\sentences_py_unittest_cache")
