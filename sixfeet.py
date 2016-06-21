@@ -7,6 +7,11 @@ import shutil
 import unittest
 import logging
 
+# Quick and fragile way to import eviltransform
+import sys
+sys.path.append('../lib/eviltransform/python')
+import eviltransform
+
 class SixFeetDownloader:
 
     _FOOT_BASE_URL = "http://foooooot.com"
@@ -64,12 +69,17 @@ class SixFeetDownloader:
         import json
 
         url = SixFeetDownloader._FOOT_BASE_URL + SixFeetDownloader._TRACK_JSON_URL.format(trip_info.id)
-        points_json = json.loads(self.track_downloader.download(url))
+        try:
+            points_json = json.loads(self.track_downloader.download(url))
+        except:
+            logging.warning("Couldn't parse json for trip {0}".format(trip_info.id))
+            points_json = []
 
         points = []
 
         for p in points_json:
-            points.append(GpsTrackPoint(p[0], p[1], p[2], p[3], p[4], p[5]))
+            p[1], p[2] = eviltransform.gcj2wgs(p[1], p[2])
+            points.append(GpsTrackPoint(p[1], p[2], p[3], p[0], p[4], p[5]))
 
         return points
 
@@ -84,11 +94,11 @@ class TripInfo:
 
 
 class GpsTrackPoint:
-    def __init__(self, timestamp, latitude, longitude, altitude, speed, cumulative_distance):
-        self.timestamp = timestamp
+    def __init__(self, latitude, longitude, altitude, timestamp, speed, cumulative_distance):
         self.latitude = latitude
         self.longitude = longitude
         self.altitude = altitude
+        self.timestamp = timestamp
         self.speed = speed
         self.cumulative_distance = cumulative_distance
 
@@ -141,8 +151,8 @@ class UnitTests(unittest.TestCase):
 
         self.assertEqual(835, len(track_points))
         self.assertEqual("1466211222", track_points[1].timestamp)
-        self.assertEqual(39.948115, track_points[1].latitude)
-        self.assertEqual(116.18917, track_points[1].longitude)
+        self.assertAlmostEqual(39.946837, track_points[1].latitude, 6)
+        self.assertAlmostEqual(116.1830357, track_points[1].longitude, 6)
         self.assertEqual(88.0, track_points[1].altitude)
         self.assertEqual(4.5, track_points[1].speed)
         self.assertEqual(0.02332, track_points[1].cumulative_distance)
