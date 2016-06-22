@@ -1,6 +1,6 @@
 {
     "__comment": "Path to log file.",
-    "log_file": "~\\Documents\\Scratch\\Logs\\hike-seeker2.log",
+    "log_file": "~\\Documents\\Scratch\\Logs\\hike-seeker.log",
     
     "__comment": "Folder where caches of HTML documents should be stored",
     "download_cache_folder": "~\\Documents\\Scratch\\PythonDownloadCache\\hike-seeker",

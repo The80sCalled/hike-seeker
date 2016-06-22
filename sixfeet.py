@@ -12,6 +12,50 @@ import sys
 sys.path.append('../lib/eviltransform/python')
 import eviltransform
 
+def download_tons_of_trips(config, page_range):
+    """
+    Hack of a utility function to load trip and track data from foooooot.com.
+
+    page_range is simply the range of pages to download, so page 1, once it's downloaded and
+    stored in the cahce, will never be updated.  This is obviously incorrect, but it worked
+    well enough for me to download a few hundred tracks for analysis.
+    """
+    import time
+    import random
+    import cacheddownloader
+    import json
+    import codecs
+    import jsonpickle
+
+    cached_downloader = cacheddownloader.CachedDownloader(config['download_cache_folder'], True)
+    sfclient = SixFeetDownloader(cached_downloader, cached_downloader)
+
+    # Optimization to avoid loading and parsing html files on each run
+    # trips_cache_file = os.path.join(config['download_cache_folder'], "trips.json")
+    # if not os.path.exists(trips_cache_file):
+    #     trips = sfclient.get_beijing_trip_info(page_range)
+    #
+    #     with codecs.open(trips_cache_file, 'w', 'utf-8') as file:
+    #         file.write(jsonpickle.encode(trips))
+    #     logging.info("Parsed {0} trips from html files; saved to '{1}'".format(len(trips), trips_cache_file))
+    #
+    # else:
+    #     with codecs.open(trips_cache_file, 'r', 'utf-8') as file:
+    #         trips = jsonpickle.decode(file.read())
+    #     logging.info("Loaded {0} trips from cache".format(len(trips)))
+
+    trips = sfclient.get_beijing_trip_info(page_range)
+
+    for t in trips:
+        t.track, dled_from_cache = sfclient.get_track_json(t)
+
+        if not dled_from_cache:
+            # foooooot.com returns HTTP 599 if you query it too quickly.  Introduce a random delay.
+            time.sleep(random.randrange(2, 6))
+
+    return trips
+
+
 class SixFeetDownloader:
 
     _FOOT_BASE_URL = "http://foooooot.com"
@@ -57,7 +101,8 @@ class SixFeetDownloader:
 
         for i in page_range:
             url = SixFeetDownloader._FOOT_BASE_URL + SixFeetDownloader._TRIP_LISTING_URL.format(i)
-            dom = html.fromstring(self.trip_downloader.download(url))
+            doc, from_cache = self.trip_downloader.download(url)
+            dom = html.fromstring(doc)
             new_trips = self._parse_track_info_dom(dom)
             trip_info.extend(new_trips)
             logging.info("Downloaded {0} new trips, first one's date is {1}".format(len(new_trips), new_trips[0].hike_date))
@@ -69,8 +114,9 @@ class SixFeetDownloader:
         import json
 
         url = SixFeetDownloader._FOOT_BASE_URL + SixFeetDownloader._TRACK_JSON_URL.format(trip_info.id)
+        doc, from_cache = self.track_downloader.download(url)
         try:
-            points_json = json.loads(self.track_downloader.download(url))
+            points_json = json.loads(doc)
         except:
             logging.warning("Couldn't parse json for trip {0}".format(trip_info.id))
             points_json = []
@@ -81,7 +127,7 @@ class SixFeetDownloader:
             p[1], p[2] = eviltransform.gcj2wgs(p[1], p[2])
             points.append(GpsTrackPoint(p[1], p[2], p[3], p[0], p[4], p[5]))
 
-        return points
+        return points, from_cache
 
 
 class TripInfo:

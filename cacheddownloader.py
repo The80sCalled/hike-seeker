@@ -17,7 +17,7 @@ class CachedDownloader:
         Downloads example sentences for the given word from Bing's dictionary.
         Returns the content of the html page.
         :param word: hanzi of word to search for
-        :return:
+        :return: text of the downloaded document, whether it was retrieved from the cache
         """
         if not self.use_cache:
             response = requests.get(url)
@@ -37,8 +37,8 @@ class CachedDownloader:
                 file.write(response_as_text)
 
             logging.info("Saved content to '%s'", cache_file)
-            return response_as_text
+            return response_as_text, False
 
         else:
             with codecs.open(cache_file, 'r', 'utf-8') as file:
-                return file.read()
+                return file.read(), True

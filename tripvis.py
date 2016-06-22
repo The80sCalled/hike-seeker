@@ -11,7 +11,7 @@ def _start_end_marker_coords_from_point(lat, long):
     RADIUS_Y = CIRCLE_RADIUS_IN_METERS / 1000 / KM_PER_DEGREE
     RADIUS_X = RADIUS_Y * math.cos(42 / (180 / math.pi))
 
-    POLY_SEGS = 9
+    POLY_SEGS = 5
     coords = ""
     for r in range(POLY_SEGS + 1):
         rads = r / POLY_SEGS * 2 * math.pi
@@ -66,31 +66,6 @@ def _placemark_from_trip_and_track(trip_info):
         )
     ]
 
-        # KML.Polygon(
-        #     KML.outerBoundaryIs(
-        #         KML.LinearRing(
-        #             KML.coordinates(start_coords)
-        #         )
-        #     )
-        # ),
-        #
-        # KML.Polygon(
-        #     KML.outerBoundaryIs(
-        #         KML.LinearRing(
-        #             KML.coordinates(end_coords)
-        #         )
-        #     )
-        # )
-
-# < Polygon > < outerBoundaryIs > < LinearRing >
-# < coordinates >
-# 135.2, 35.4, 0.
-# 135.4, 35.6, 0.
-# 135.2, 35.6, 0.
-# 135.2, 35.4, 0.
-# < / coordinates >
-# < / LinearRing > < / outerBoundaryIs > < / Polygon >
-
 
 def visualize_trips(trips, kml_file):
     """Writes KML for the given trips to the given kml_file path."""
@@ -106,14 +81,14 @@ def visualize_trips(trips, kml_file):
         ),
         KML.Style(
             KML.LineStyle(
-                KML.color("7f00ff00"),
+                KML.color("1f00ff00"),
                 KML.width("10")
             ),
             id="hikeStart"
         ),
         KML.Style(
             KML.LineStyle(
-                KML.color("7f0000ff"),
+                KML.color("1f0000ff"),
                 KML.width("10")
             ),
             id="hikeEnd"
