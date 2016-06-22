@@ -48,8 +48,8 @@ class SixFeetDownloader:
             start_time_text = re.search("([-:\d\s]{8,20})", start_time_text).group(1).strip()
             trip_start_time = datetime.datetime.strptime(start_time_text, "%Y-%m-%d %H:%M")
 
-            upload_date_texts = s.xpath('./dd[1]/text()')
-            upload_date_text = re.search("([-:\d]{8,12})", upload_date_texts[1].strip()).group(1).strip()
+            upload_date_texts = "".join(s.xpath('./dd[1]/text()'))
+            upload_date_text = re.search("([-:\d]{8,12})", upload_date_texts).group(1).strip()
             trip_upload_date = datetime.datetime.strptime(upload_date_text, "%Y-%m-%d")
 
             infos.append(tripdb.TripInfo(trip_id, trip_title, trip_type, trip_start_time, trip_upload_date))

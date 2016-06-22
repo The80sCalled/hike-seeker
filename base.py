@@ -37,6 +37,7 @@ def _init_internal(config_file):
 
 def _init_logger(logFilePath):
     import logging.handlers
+    import sys
 
     formatter = logging.Formatter(
         fmt = "%(asctime)s: %(filename)s:%(lineno)d %(levelname)s:%(name)s: %(message)s",
@@ -57,3 +58,11 @@ def _init_logger(logFilePath):
         root_logger.addHandler(h)
 
     logging.info("Started logging")
+    sys.excepthook = _unhandled_exception
+
+def _unhandled_exception(ex_cls, ex, tb):
+    import traceback
+    # See http://blog.tplus1.com/blog/2012/08/05/python-log-uncaught-exceptions-with-sys-excepthook/
+    logging.critical(''.join(traceback.format_tb(tb)))
+    logging.critical('{0}: {1}'.format(ex_cls, ex))
+    logging.critical(ex.__dict__)
