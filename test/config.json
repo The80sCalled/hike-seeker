@@ -1,0 +1,15 @@
+{
+    "__comment": "Path to log file.",
+    "log_file": "~\\Documents\\Scratch\\Logs\\hike-seeker-test.log",
+
+    "mongodb": {
+        "__comment": "IP address and port where MongoDB instance is hosted",
+        "host": "mongodb://10.0.0.68:27017/",
+
+        "__comment": "Connection timeout, in milliseconds",
+        "timeoutMS": 3000,
+
+        "__comment": "Name of main DB to store trips",
+        "tripsDBName": "tripsDB-test"
+    }
+}
