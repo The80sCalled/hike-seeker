@@ -12,11 +12,16 @@ def update_trip_db(config, db):
     :param db:
     :return:
     """
-    trips = _download_tons_of_trips(config, range(500, 2451))
+    BATCH_SIZE = 100
+    PAGE_COUNT = 2450
+    for page in range(1, 2451, BATCH_SIZE):
+        rg = range(page, min(page + BATCH_SIZE, PAGE_COUNT + 1))
+        logging.info("Pages {0}-{1}".format(rg.start, rg.stop - 1))
+        trips = _download_tons_of_trips(config, rg)
 
-    logging.info("Begin insert {0} rows into MongoDB...".format(len(trips)))
-    result = db.insert_many(trips, ignore_duplicates=True)
-    logging.info("Insert {0} rows complete.".format(len(result.inserted_ids)))
+        logging.info("Begin insert {0} rows into MongoDB...".format(len(trips)))
+        result = db.insert_many(trips, ignore_duplicates=True)
+        logging.info("Insert {0} rows complete.".format(len(result.inserted_ids)))
 
 
 def _download_tons_of_trips(config, page_range):
