@@ -4,57 +4,17 @@ import cacheddownloader
 import os
 import osutils
 import shutil
+from test import testdata
 import unittest
 import logging
+# This class technically doesn't need to depend on the DB, but breaking the TripInfo, etc. classes into
+# a separate module is kinda unnecessary
+import tripdb
 
 # Quick and fragile way to import eviltransform
 import sys
 sys.path.append('../lib/eviltransform/python')
 import eviltransform
-
-def download_tons_of_trips(config, page_range):
-    """
-    Hack of a utility function to load trip and track data from foooooot.com.
-
-    page_range is simply the range of pages to download, so page 1, once it's downloaded and
-    stored in the cahce, will never be updated.  This is obviously incorrect, but it worked
-    well enough for me to download a few hundred tracks for analysis.
-    """
-    import time
-    import random
-    import cacheddownloader
-    import json
-    import codecs
-    import jsonpickle
-
-    cached_downloader = cacheddownloader.CachedDownloader(config['download_cache_folder'], True)
-    sfclient = SixFeetDownloader(cached_downloader, cached_downloader)
-
-    # Optimization to avoid loading and parsing html files on each run
-    # trips_cache_file = os.path.join(config['download_cache_folder'], "trips.json")
-    # if not os.path.exists(trips_cache_file):
-    #     trips = sfclient.get_beijing_trip_info(page_range)
-    #
-    #     with codecs.open(trips_cache_file, 'w', 'utf-8') as file:
-    #         file.write(jsonpickle.encode(trips))
-    #     logging.info("Parsed {0} trips from html files; saved to '{1}'".format(len(trips), trips_cache_file))
-    #
-    # else:
-    #     with codecs.open(trips_cache_file, 'r', 'utf-8') as file:
-    #         trips = jsonpickle.decode(file.read())
-    #     logging.info("Loaded {0} trips from cache".format(len(trips)))
-
-    trips = sfclient.get_beijing_trip_info(page_range)
-
-    for t in trips:
-        t.track, dled_from_cache = sfclient.get_track_json(t)
-
-        if not dled_from_cache:
-            # foooooot.com returns HTTP 599 if you query it too quickly.  Introduce a random delay.
-            time.sleep(random.randrange(2, 6))
-
-    return trips
-
 
 class SixFeetDownloader:
 
@@ -88,7 +48,11 @@ class SixFeetDownloader:
             start_time_text = re.search("([-:\d\s]{8,20})", start_time_text).group(1).strip()
             trip_start_time = datetime.datetime.strptime(start_time_text, "%Y-%m-%d %H:%M")
 
-            infos.append(TripInfo(trip_id, trip_title, trip_type, trip_start_time))
+            upload_date_texts = s.xpath('./dd[1]/text()')
+            upload_date_text = re.search("([-:\d]{8,12})", upload_date_texts[1].strip()).group(1).strip()
+            trip_upload_date = datetime.datetime.strptime(upload_date_text, "%Y-%m-%d")
+
+            infos.append(tripdb.TripInfo(trip_id, trip_title, trip_type, trip_start_time, trip_upload_date))
 
         return infos
 
@@ -125,37 +89,16 @@ class SixFeetDownloader:
 
         for p in points_json:
             p[1], p[2] = eviltransform.gcj2wgs(p[1], p[2])
-            points.append(GpsTrackPoint(p[1], p[2], p[3], p[0], p[4], p[5]))
+            points.append(tripdb.GpsTrackPoint(p[1], p[2], p[3], p[0], p[4], p[5]))
 
         return points, from_cache
 
 
-class TripInfo:
-    def __init__(self, id, title, type, hike_date):
-        self.id = id
-        self.title = title
-        self.type = type
-        self.hike_date = hike_date
-        self.track = []
-
-
-class GpsTrackPoint:
-    def __init__(self, latitude, longitude, altitude, timestamp, speed, cumulative_distance):
-        self.latitude = latitude
-        self.longitude = longitude
-        self.altitude = altitude
-        self.timestamp = timestamp
-        self.speed = speed
-        self.cumulative_distance = cumulative_distance
-
 
 class UnitTests(unittest.TestCase):
-    _TEMP_CACHE_FOLDER = os.path.expandvars("$Temp\\sixfeet_py_unittest_cache")
 
     def setUp(self):
-        osutils.clear_dir(UnitTests._TEMP_CACHE_FOLDER)
-        shutil.copytree("unittest\\test-data", UnitTests._TEMP_CACHE_FOLDER, True)
-        self.dl = cacheddownloader.CachedDownloader(UnitTests._TEMP_CACHE_FOLDER, True)
+        self.dl = testdata.setUp()
 
     def tearDown(self):
         pass
@@ -176,6 +119,7 @@ class UnitTests(unittest.TestCase):
         self.assertEqual("大觉寺 萝卜地 妙峰山 阳台山 凤凰岭 白虎涧", trips[1].title)
 
         self.assertEqual(datetime.datetime(2106, 2, 7, 14, 28), trips[2].hike_date)
+        self.assertEqual(datetime.datetime(2015, 7, 21), trips[2].upload_date)
 
     def test_track_list_page_2(self):
         me = SixFeetDownloader(self.dl, self.dl)
@@ -191,9 +135,9 @@ class UnitTests(unittest.TestCase):
 
         me = SixFeetDownloader(self.dl, self.dl)
 
-        fake_trip = TripInfo("931702", "20160618八大处-植物园", "登山", datetime.datetime(2016, 6, 18, 8, 53))
+        fake_trip = tripdb.TripInfo("931702", "20160618八大处-植物园", "登山", datetime.datetime(2016, 6, 18, 8, 53), datetime.datetime(2016, 5, 19))
 
-        track_points = me.get_track_json(fake_trip)
+        track_points, from_cache = me.get_track_json(fake_trip)
 
         self.assertEqual(835, len(track_points))
         self.assertEqual("1466211222", track_points[1].timestamp)
