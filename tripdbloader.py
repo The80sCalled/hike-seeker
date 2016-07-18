@@ -14,7 +14,7 @@ def update_trip_db(config, db):
     """
     BATCH_SIZE = 100
     PAGE_COUNT = 2450
-    for page in range(1, 2451, BATCH_SIZE):
+    for page in range(1, PAGE_COUNT + 1, BATCH_SIZE):
         rg = range(page, min(page + BATCH_SIZE, PAGE_COUNT + 1))
         logging.info("Pages {0}-{1}".format(rg.start, rg.stop - 1))
         trips = _download_tons_of_trips(config, rg)
